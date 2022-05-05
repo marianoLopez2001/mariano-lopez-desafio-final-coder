@@ -1,0 +1,62 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+body {
+  background-color: #181818; }
+
+header a {
+  text-decoration: none;
+  color: white;
+  background-color: #373737;
+  border: 1px solid #4a4a4a;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem; }
+  header a:hover {
+    background-color: #4f4f4f;
+    color: white; }
+
+header .nav-menu-top {
+  background-color: #202020;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.4rem 0rem; }
+  header .nav-menu-top .nav-menu-logo {
+    font-size: 28px; }
+  header .nav-menu-top .nav-menu-logo {
+    color: white;
+    background-color: #373737;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.8rem;
+    border: 1px solid #4a4a4a; }
+  header .nav-menu-top ul {
+    margin: 0px; }
+    header .nav-menu-top ul li {
+      display: inline-block;
+      margin: 0rem 0.5rem; }
+  header .nav-menu-top form {
+    display: flex; }
+    header .nav-menu-top form input {
+      border-radius: 0.8rem; }
+    header .nav-menu-top form button {
+      color: white;
+      border-radius: 0.8rem;
+      background-color: #373737;
+      border-color: #4a4a4a; }
+
+header .nav-menu-bottom {
+  background-color: #202020;
+  border: 1px solid #373737;
+  padding: 0.4rem; }
+  header .nav-menu-bottom ul {
+    margin: 0rem;
+    padding: 0.4rem 0rem;
+    text-align: center; }
+    header .nav-menu-bottom ul li {
+      display: inline-block;
+      padding: 0.2rem 0.8rem;
+      margin: 0rem 0.2rem;
+      border-radius: 0.2rem;
+      font-size: 0.8rem; }
