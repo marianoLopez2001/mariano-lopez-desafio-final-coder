@@ -9,6 +9,7 @@ ul {
 header {
     width: 100%;
     position: fixed; //no hace falta creao aca
+    z-index: 10000;
     top: 0;
     left: 0;
     background-color: $color-negro-uno;
