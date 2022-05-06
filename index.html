@@ -8,9 +8,13 @@
     <meta name="description"
         content="Pagina de comics donde encontraras la mejor seleccion de comics en linea y gratis!">
     <meta name="keywords" content="COMICS, HEROES, SUPERHEROES, MARVEL, DC">
+    <!--FUENTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap" rel="stylesheet">
     <!--LINK DEL CDN DE BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
     <!--LINK DEL MAIN CSS-->
     <link rel="stylesheet" href="./css/main.css">
     <title>Pagina Comics - Inicio</title>
@@ -18,104 +22,80 @@
 
 <body>
     <header>
-        <nav>
-            <div class="nav-menu-top">
-                <h1 class="nav-menu-logo">LOGO COMICS</h1>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explorar</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                    <i class="bi bi-list"></i>
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <h1 class="logo">LOGO</h1>
+                <ul class="nav-list">
+                    <li><a class="activo" href="#">Inicio</a></li>
+                    <li><a href="#">Explorar<i class="bi bi-caret-down-fill"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Personajes<i class="bi bi-caret-down-fill"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Wolverine</a></li>
+                                    <li><a href="#">Capitan America</a></li>
+                                    <li><a href="#">Iron Man</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Editoriales<i class="bi bi-caret-down-fill"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">DC</a></li>
+                                    <li><a href="#">Marvel</a></li>
+                                    <li><a href="#">BlackHorse</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Sobre Nosotros</a></li>
                 </ul>
-                <form>
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                <form action="">
+                    <input type="search" placeholder="Buscar Comic..." aria-label="Search">
+                    <button type="submit"><i class="bi bi-search"></i></button>
                 </form>
-            </div>
-            <div class="nav-menu-bottom">
-                <ul>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another</a></li>
-                            <li><a class="dropdown-item" href="#">Something</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another</a></li>
-                            <li><a class="dropdown-item" href="#">Something</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another</a></li>
-                            <li><a class="dropdown-item" href="#">Something</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another</a></li>
-                            <li><a class="dropdown-item" href="#">Something</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another</a></li>
-                            <li><a class="dropdown-item" href="#">Something</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another</a></li>
-                            <li><a class="dropdown-item" href="#">Something</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
+
+    <main>
+        <!--<section class="main__container">
+            <div class="main__container__card">
+                <h1 class="comic__card__title">Kick Ass Vol. 2</h1>
+                <div class="comic__card">
+                    <img src="./images/comics/all new wolverine.jpg" alt="" class="comic__card__image" width="400px">
+                    <div class="comic__card__description">
+                        <p class="comic__card__description__sinopsis">La historia se sitúa un año después de los eventos acontecidos en el primer volumen de Kick Ass. Mindy (Hit-Girl) lleva una doble-vida, por un lado intenta entrenar
+                            a Dave Lizewski (Kick-Ass) para convertirlo en un héroe más competente y por el otro, trata de dejar de ser una superheroína ya que su padre adoptivo, Marcus, quiere que tenga
+                            una vida normal con su madre. Marcus, un detective privado del departamento de policía, deduce las acciones de Mindy y le hace prometer no volver a encontrarse con Kick Ass
+                            y a perder contacto con todo lo relacionado a los superhéroes, a lo que acepta a regañadientes</p>
+                        <p class="comic__card__description__formato">Formato: CBR</p>
+                        <div class="comic__card__description__links">
+                            <a href="#" class="comic__card__description__links__items">link</a>
+                            <a href="#" class="comic__card__description__links__items">link</a>
+                            <a href="#" class="comic__card__description__links__items">link</a>
+                        </div>
+                        <div class="container__redes">
+                            <i class="container__redes__items bi bi-instagram"></i>
+                            <i class="container__redes__items bi bi-twitter"></i>
+                            <i class="container__redes__items bi bi-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__container__aside">
+                <a class="main__container__aside__link" href=""><img src="./images/iframe.PNG" alt="link aside instrucciones"></a>
+            </div>
+        </section>-->
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

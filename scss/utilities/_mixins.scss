@@ -1,0 +1,11 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+@mixin flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
