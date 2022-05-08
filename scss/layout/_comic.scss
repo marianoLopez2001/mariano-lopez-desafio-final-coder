@@ -1,0 +1,87 @@
+.comicTituloPadre {
+    border: $border;
+    width: fit-content;
+    padding: 3rem;
+    color: white;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    background-color: $color-negro-uno;
+
+    .comicTitulo {
+        letter-spacing: 5px;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .comicMain {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            border-radius: 5px;
+            border: $border;
+        }
+
+        .card-body {
+            padding: 0rem 1rem;
+            .cardDescripcion {
+                max-width: 300px;
+                margin: auto;
+                font-size: 1.5rem;
+            }
+
+            .cardLinks {
+                text-align: center;
+                padding: 1rem;
+                a {
+                    display: block;
+                    font-size: 1.5rem;
+                }
+            }
+            .redesComicCard {      
+                @include flex-evenly;
+                margin-top: 2rem;
+                i {
+                    font-size: 2.5rem;
+                    &:hover {
+                        color: red;
+                        transition: 600ms;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.comicsRelacionados {
+    padding: 3rem 0rem;
+    border-top: $border;
+    color: white;
+
+    h3, h2 {
+        text-align: center;
+        letter-spacing: 5px;
+        padding-bottom: 2rem;
+        font-size: 2.4rem;
+    }
+
+    .comicsRelacionadosImg {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-content: center;
+        place-items: center;
+        padding: 0rem 15rem 3rem 15rem;
+        gap: 3rem;
+
+        img {
+            border-radius: 0.25rem;
+            border: $border;
+
+            &:hover {
+                transform: scale(102%);
+                transition: 0.3s;
+            }
+        }
+    }
+}

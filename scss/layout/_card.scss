@@ -1,0 +1,61 @@
+.imgContainer {
+    max-width: 200px;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 0rem 1rem 1rem 0rem;
+    border-radius: 5px;
+    border: $border;
+
+    &:hover img {
+        transform: scale(1.1);
+        transition: ease 500ms;
+    }
+
+    &:hover .leerMasDiv {
+        opacity: 1;
+        visibility: visible;
+        transition: 800ms;
+    }
+
+    &:hover .descriptionContainer {
+        background-color: rgba(0, 0, 0, 0.487);
+        transition: ease 500ms;
+    }
+    &:hover .description {
+        transform: translateY(-101%);
+        transition: all 500ms ease-out;
+    }
+
+    .descriptionContainer {
+        position: absolute;
+        top: 55%;
+        width: 198px;
+        height: 136px;
+    }
+    .description {
+        color: white;
+        h3 {
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 0.5rem 0rem 0rem 0rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+            margin: 0rem 0.5rem 0.5rem 0.5rem;
+        }
+
+        .btnLeerMas {
+            font-size: 1.2rem;
+            padding: 0.8rem 0rem;
+            border-radius: 5px;
+            background-color: red;
+            text-align: center;
+            margin: 0rem;
+            &:hover {
+                background-color: rgb(255, 66, 66);
+            }
+        }
+    }
+}

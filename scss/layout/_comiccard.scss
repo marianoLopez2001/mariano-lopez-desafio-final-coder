@@ -1,0 +1,68 @@
+    .comic {
+        padding: 1rem;
+        margin: 3rem;
+        background-color: $color-negro-uno;
+        border-radius: 5px;
+        border: 1px solid $color-gris-border;
+        width: fit-content;
+        color: white;
+
+        .comicTitle {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .comicCardBody {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 1rem;
+
+            img {
+                border-radius: 5px;
+                max-width: 300px;
+                border: $border;
+            }
+
+            .comicCardDescription {
+                .sinopsis {
+                    max-width: 30rem;
+                    @extend %parrafo-font-size;
+                }
+
+                .formato {
+                    @extend %parrafo-font-size;
+                }
+
+                .editorial {
+                    @extend %parrafo-font-size;
+                }
+
+                .comicCardLinks {
+                    text-align: center;
+                    margin: 2rem 0rem;
+
+                    a {
+                        display: block;
+                        margin: 1rem 0rem;
+                        @extend %parrafo-font-size;
+                    }
+                }
+
+                .redes {
+                    @include flex-evenly;
+
+                    a {
+                        color: white;
+                        &:hover {
+                            color: red;
+                            transition: ease 600ms;
+                        }
+                        i {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }

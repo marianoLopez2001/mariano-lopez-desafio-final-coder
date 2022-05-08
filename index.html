@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap" rel="stylesheet">
     <!--LINK DEL CDN DE BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--carousel-->
     <link type="text/css" rel="stylesheet" href="./css/lightslider.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -25,8 +25,11 @@
 </head>
 
 <body>
+
+    <!--INICIO DE HEADER Y MENU DE NAVEGACION-->
+
     <header>
-        <div class="container">
+        <div class="navbarContainer">
             <nav>
                 <div class="menu-icons">
                     <i class="bi bi-list"></i>
@@ -34,7 +37,7 @@
                 </div>
                 <h1 class="logo">LOGO</h1>
                 <ul class="nav-list">
-                    <li><a class="activo" href="#">Inicio</a></li>
+                    <li><a class="activo" href="./index.html">Inicio</a></li>
                     <li><a href="#">Explorar<i class="bi bi-caret-down-fill"></i></a>
                         <ul class="sub-menu">
                             <li><a href="#">Personajes<i class="bi bi-caret-down-fill"></i></a>
@@ -54,7 +57,7 @@
                         </ul>
                     </li>
                     <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="./pages/sobrenosotros.html">Sobre Nosotros</a></li>
                 </ul>
                 <form action="">
                     <input type="search" placeholder="Buscar Comic..." aria-label="Search">
@@ -64,80 +67,207 @@
         </div>
     </header>
 
+    <!--INICIO DE MAIN-->
+
     <main>
-        <div class="demo">
-            <div class="item">
-                <ul id="lightSlider" class="content-slider">
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
-                    </li>
-                </ul>
+
+        <!--INICIO DE CAROUSEL-->
+
+        <section class="contenedorCarousel">
+            <div class="carousel">
+                <div class="item">
+                    <ul id="lightSlider" class="content-slider">
+                        <li>
+                            <a href="#"><img src="./images/comics/all new wolverine.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/comics/kickass2.webp" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/comics/deadpool4-11.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/comics/batmanhush.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/comics/Batman_DC_1.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/comics/The-Brave-and-the-Bold.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/comics/1536.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/comics/portada-vengadores-vs-x-men.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/comics/suicidesquad13_portada.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/comics/A19LSfFe4sL.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/comics/dcb80ec52819e8c9cb37d3d856b86691.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>	
-        <!--<section class="main__container">
-            <div class="main__container__card">
-                <h1 class="comic__card__title">Kick Ass Vol. 2</h1>
-                <div class="comic__card">
-                    <img src="./images/comics/all new wolverine.jpg" alt="" class="comic__card__image" width="400px">
-                    <div class="comic__card__description">
-                        <p class="comic__card__description__sinopsis">La historia se sitúa un año después de los eventos acontecidos en el primer volumen de Kick Ass. Mindy (Hit-Girl) lleva una doble-vida, por un lado intenta entrenar
-                            a Dave Lizewski (Kick-Ass) para convertirlo en un héroe más competente y por el otro, trata de dejar de ser una superheroína ya que su padre adoptivo, Marcus, quiere que tenga
-                            una vida normal con su madre. Marcus, un detective privado del departamento de policía, deduce las acciones de Mindy y le hace prometer no volver a encontrarse con Kick Ass
-                            y a perder contacto con todo lo relacionado a los superhéroes, a lo que acepta a regañadientes</p>
-                        <p class="comic__card__description__formato">Formato: CBR</p>
-                        <div class="comic__card__description__links">
-                            <a href="#" class="comic__card__description__links__items">link</a>
-                            <a href="#" class="comic__card__description__links__items">link</a>
-                            <a href="#" class="comic__card__description__links__items">link</a>
+        </section>
+
+        <!--CATALOGO-->
+
+        <section class="mainContainer">
+            <div class="comicContainer">
+                <div class="comic">
+                    <h1 class="comicTitle">Avengers vs X-Men</h1>
+                    <div class="comicCardBody">
+                        <img class="img-fluid" src="./images/comics/portada-vengadores-vs-x-men.jpg"
+                            alt="Portada Comic kick ass 2" width="300px">
+                        <div class="comicCardDescription">
+                            <p class="sinopsis">Phoenix, una energía cósmica que representa la muerte y la resurrección, viene de camino a la Tierra. Esta fuerza requiere de un huésped, por lo que Hope Summers es señalada para esta tarea. Los X-Men creen que la llegada de Phoenix significa el resurgimiento de los mutantes -cuya población se encuentra diezmada- por lo que preparan a Hope. Del otro lado, los Avengers ven en Phoenix una amenaza para el mundo, por lo que buscan custodiar a la chica.
+                            </p>
+                            <p class="formato">Formato: CBR</p>
+                            <p class="editorial">Editorial: Marvel</p>
+                            <div class="comicCardLinks">
+                                <a href="#">Link de descarga</a>
+                            </div>
+                            <div class="redes">
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                            </div>
                         </div>
-                        <div class="container__redes">
-                            <i class="container__redes__items bi bi-instagram"></i>
-                            <i class="container__redes__items bi bi-twitter"></i>
-                            <i class="container__redes__items bi bi-facebook"></i>
+                    </div>
+                </div>
+                <div class="comic">
+                    <h1 class="comicTitle">Kick Ass Vol. 2</h1>
+                    <div class="comicCardBody">
+                        <img src="./images/comics/kickass2.webp" alt="Portada Comic kick ass 2" width="300px">
+                        <div class="comicCardDescription">
+                            <p class="sinopsis">La historia se sitúa un año después de los eventos acontecidos en el
+                                primer volumen de Kick Ass. Mindy (Hit-Girl) lleva una doble-vida, por un lado intenta
+                                entrenar
+                                a Dave Lizewski (Kick-Ass) para convertirlo en un héroe más competente y por el otro,
+                                trata de dejar de ser una superheroína ya que su padre adoptivo, Marcus, quiere que
+                                tenga
+                                una vida normal con su madre. Marcus, un detective privado del departamento de policía,
+                                deduce las acciones de Mindy y le hace prometer no volver a encontrarse con Kick Ass
+                                y a perder contacto con todo lo relacionado a los superhéroes, a lo que acepta a
+                                regañadientes </p>
+                            <p class="formato">Formato: CBR</p>
+                            <p class="editorial">Editorial: Independiente</p>
+                            <div class="comicCardLinks">
+                                <a href="#">Link de descarga</a>
+                            </div>
+                            <div class="redes">
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comic">
+                    <h1 class="comicTitle">Wolverine Old Man Logan</h1>
+                    <div class="comicCardBody">
+                        <img src="./images/comics/oldmanlogan2.jpg" alt="Portada Comic kick ass 2" width="300px">
+                        <div class="comicCardDescription">
+                            <p class="sinopsis">Nadie sabe qué pasó la noche en que los héroes cayeron. Todo lo que
+                                sabemos es que desaparecieron y que el mal triunfó y los malos han estado tomando las
+                                decisiones desde entonces. Lo que le pasó a Wolverine es el mayor misterio de todos.
+                                Durante 50 años, nadie ha oído hablar de él a escondidas… y en su lugar se encuentra un
+                                anciano llamado Logan. Un hombre que sólo se preocupa por sufamilia. Un hombre al que la
+                                banda de HULK empujó al borde del abismo. Un hombre obligado a ayudar a un viejo amigo,
+                                el arquero ciego, HAWKEYE, aconducir tres mil millas para asegurar la seguridad de su
+                                familia. Prepárate para el viaje de tu vida, Logan.</p>
+                            <p class="formato">Formato: CBR</p>
+                            <p class="editorial">Editorial: Marvel</p>
+                            <div class="comicCardLinks">
+                                <a href="#">Link de descarga</a>
+                            </div>
+                            <div class="redes">
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="main__container__aside">
-                <a class="main__container__aside__link" href=""><img src="./images/iframe.PNG" alt="link aside instrucciones"></a>
+            <div class="asideContainer">
+                <img src="./images/iframe.PNG" alt="">
+                <img src="./images/iframe.PNG" alt="">
+                <img src="./images/iframe.PNG" alt="">
             </div>
-        </section>-->
+        </section>
+
+        <!--INICIO DE SECCION CONTACTO-->
+
+        <section class="containerContacto">
+            <div class="mapContainer">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6314274448473!2d-58.44096218480037!3d-34.58819146418361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58c95d8999b%3A0xe26e576f58812d12!2sAv.%20Cordoba%205443%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1651965206815!5m2!1ses-419!2sar"
+                    width="500" height="408" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form>
+                <h3 class="text-center">Contactanos!</h3>
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Nombre</label>
+                    <input type="text" class="mb-4 form-control" size="25" id="inputName" placeholder="...">
+                    <label for="inputLname" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputLname" placeholder="...">
+                </div>
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        size="50" placeholder="...">
+                </div>
+                <div class="">
+                    <label for="inputTel" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" id="inputTel" placeholder="...">
+                </div>
+                <div class="text-center pt-3">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </section>
     </main>
 
+    <!--footer-->
+
+    <footer>
+        <div class="contenedorLogo">
+            <a href="./index.html">PAGINA COMICS</a>
+            <h4 class="copy">© 2022 Pagina Comics</h4>
+        </div>
+        <div class="sobreNosDiv">
+            <h4>Sobre Nosotros</h4>
+            <p>Somos una pagina para amantes de los comics. Aca vas a poder encontrar variedad de comics
+                gratis y rapido para poder descargar en tu dispositivo.</p>
+        </div>
+        <div class="contactDiv hide2">
+            <h4>Contacto</h4>
+            <p class="contactInfo">ejemplo@gmail.com</p>
+            <p class="contactInfo">011 1234-1234</p>
+            <p class="contactInfo">Av. Jorge 1234</p>
+        </div>
+        <div class="redesDiv hide2">
+            <h4>Redes Sociales</h4>
+            <a class="linkRedes" href="#"><i class="bi bi-instagram"></i> Instagram</a>
+            <a class="linkRedes" href="#"><i class="bi bi-facebook"></i> Facebook</a>
+            <a class="linkRedes" href="#"><i class="bi bi-twitter"></i> Twitter</a>
+        </div>
+    </footer>
+
+    <!--LINK DEL CDN DE BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!--LINK DEL BOOTSTRAP ICONS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--LINK DE MI JS-->
     <script src="./js/script.js"></script>
 </body>
 

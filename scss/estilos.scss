@@ -3,11 +3,21 @@
 @import "utilities/variables";
 @import "utilities/mediaqueries";
 @import "utilities/mixins";
+@import "utilities/extends";
 @import "utilities/reset";
 @import "layout/navbar";
 @import "layout/carousel";
+@import "layout/comiccard";
+@import "layout/index";
+@import "layout/sobrenosotros";
+@import "layout/footer";
+@import "layout/comic";
+@import "layout/instrucciones";
+@import "layout/contacto";
+@import "layout/card";
+body {
+    background-color: $color-negro-bg;
+}
 
-//body {
-//    background-color: $color-negro-bg;
-//}
+
 

@@ -16,7 +16,7 @@ header {
     border-bottom: 1px solid $color-gris-border;
 }
 
-.container {
+.navbarContainer {
     width: 100%;
     max-width: 117rem;
     margin: 0 auto;
@@ -95,7 +95,7 @@ nav {
     display: block;
     position: absolute;
     border-top: 3px solid $color-submenu-border;
-    background-color: $color-submenu-bg;
+    background-color: $color-gris-uno;
     z-index: 100;
     top: 16rem;
     opacity: 0;
@@ -223,10 +223,12 @@ form {
         display: flex;
         align-items: center;
         &:active {
-            color: $color-underline;
+            color: red;
+            transition: 100ms;
         }
         &:hover {
             background-color: $color-gris-uno;
+            transition: 300ms;
         }
     }
 }

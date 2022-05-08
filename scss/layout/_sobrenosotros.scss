@@ -1,0 +1,169 @@
+.sobreNosotros {
+    .sobreNosotrosPadre {
+        color: white;
+
+        .contenedorSobreNos {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 15rem;
+
+            img {
+                margin-bottom: 10rem;
+            }
+
+            .sobreNosUno {
+
+                h1 {
+                    letter-spacing: 8px;
+                    font-size: 15px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                p {
+                    margin: 0px;
+                    max-width: 500px;
+                    @extend %parrafo-font-size;
+                }
+
+                .h2NecesitasAyuda {
+                    font-size: 20px;
+                    margin-bottom: 1.3rem;
+                }
+
+                a {
+                    border-radius: 10px;
+                    padding: 0.8rem 2.5rem;
+                    background-color: red;
+                    color: white;
+                    text-decoration: none;
+                    border: $border;
+
+                    &:hover {
+                        background-color: rgb(255, 110, 110);
+                        transition: 600ms;
+                    }
+                }
+            }
+        }
+
+        .sobreNosDosPadre {
+            padding: 1.5rem 0rem 3rem 0rem;
+            border-top: $border;
+            border-bottom: $border;
+            color: white;
+            background-color: $color-negro-uno;
+
+            .tituloSobreNosDos {
+                text-align: center;
+                padding-bottom: 1.5rem;
+                letter-spacing: 3px;
+                font-size: 30px;
+            }
+
+            .sobreNosDos {
+                display: flex;
+                justify-content: space-evenly;
+
+                .ofrecemos {
+                    max-height: 300px;
+                    padding: 1rem 1.5rem;
+                    border-radius: 5px;
+                    background-color: $color-negro-uno;
+                    border: $border;
+
+                    i {
+                        font-size: 2rem;
+                    }
+
+                    h3 {
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        max-width: 200px;
+                    }
+
+                    .lecturaDigital {
+                        max-width: 250px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .sobreNosotrosPadreDos {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        color: white;
+        padding: 10rem;
+
+        .redesSociales {
+            padding: 3rem;
+            background-color: $color-negro-uno;
+            border: $border;
+
+            .iconsRedes {
+                text-align: center;
+                font-size: 2.5rem;
+                padding-top: 1rem;
+
+                i {
+                    margin: 0rem 0.4rem;
+                    color: white;
+                    font-size: 3rem;
+
+                    &:hover {
+                        color: red;
+                        transition: 600ms;
+                    }
+                }
+            }
+        }
+
+        .semiContacto {
+            padding: 3rem;
+            background-color: $color-negro-uno;
+            border-radius: 1rem;
+            border: $border;
+
+            h3 {
+                padding-bottom: 1.5rem;
+                text-align: center;
+            }
+
+            p {
+                max-width: 400px;
+            }
+        }
+    }
+
+    .sobreNosotrosPadreTres {
+        padding: 0rem 0rem 3rem 0rem;
+        border-top: $border;
+        border-bottom: $border;
+        color: white;
+
+        .preguntasFrecuentes {
+
+            h3 {
+                padding: 3rem;
+                font-size: 30px;
+                letter-spacing: 4px;
+            }
+
+            div {
+                border-top: 1px solid $color-gris-border;
+                border-bottom: 1px solid $color-gris-border;
+                padding: 1rem;
+                background-color: $color-negro-uno;
+            }
+        }
+    }
+}

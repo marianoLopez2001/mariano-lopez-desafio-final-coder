@@ -1,0 +1,73 @@
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 1rem;
+    padding: 3rem;
+    color: white;
+    background-color: $color-negro-uno;
+    border-top: 1px solid $color-gris-border;
+
+    .contenedorLogo {
+        margin-left: 3rem;
+
+        a {
+            font-size: 3rem;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    h4 {
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .copy {
+        font-size: 12px;
+    }
+
+    .sobreNosDiv {
+        padding: 1rem;
+        margin-bottom: 3rem;
+
+        p {
+            max-width: 250px;
+            font-size: 1.2rem;
+        }
+    }
+
+    .contactDiv {
+        padding: 1rem;
+
+        .contactInfo {
+            display: block;
+            font-size: 1.2rem;
+        }
+    }
+
+    .redesDiv {
+        padding: 1rem;
+
+        .linkRedes {
+            text-decoration: none;
+            display: block;
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
+            color: white;
+
+            &:hover i {
+                color: red;
+                transition: 600ms;
+            }
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

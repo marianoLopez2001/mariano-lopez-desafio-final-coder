@@ -1,0 +1,32 @@
+.containerContacto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 3rem 0rem;
+    border-top: $border;
+    iframe {
+        border: 3rem solid $color-gris-border;
+        border-radius: 1rem;
+    }
+    form {
+        display: initial;
+        color: white;
+        background-color: $color-negro-uno;
+        padding: 3rem 3rem 2rem 3rem;
+        border: 1px solid $color-gris-border;
+        border-radius: 1rem;
+        input {
+            border-radius: 1rem;
+        }
+        .btn {
+            background-color: red;
+            border-radius: 1rem;
+            border: $border;
+            &:hover {
+                background-color: rgb(255, 88, 88);
+                transition: ease 300ms;
+            }
+        }
+    }
+}

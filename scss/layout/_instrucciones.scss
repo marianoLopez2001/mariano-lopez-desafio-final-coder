@@ -1,0 +1,67 @@
+.instruccionesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+    color: white;
+    margin-top: 10rem;
+
+    .instruccionesUno {
+        padding: 2rem;
+        border: $border;
+        border-radius: 5px;
+        height: fit-content;
+        background-color: $color-negro-uno;
+
+        h1 {
+            text-align: center;
+            letter-spacing: 5px;
+            padding-bottom: 2rem;
+            font-size: 30px;
+        }
+
+        ol {
+            margin: 2rem;
+
+            li {
+                max-width: 600px;
+                font-size: 1.2rem;
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            padding-left: 2rem;
+        }
+
+        .iframeVid {
+            border-radius: 10px;
+            border: $border;
+            margin: 0rem 0rem 1rem 0rem;
+        }
+
+        .iconsRedesInstrucciones {
+            display: flex;
+            justify-content: space-evenly;
+
+            i {
+                font-size: 2rem;
+                color: white;
+
+                &:hover {
+                    transition: 600ms;
+                    color: red;
+                }
+            }
+        }
+    }
+
+    .instruccionesDos {
+        padding: 2rem;
+        margin-top: 5rem;
+
+        h3 {
+            letter-spacing: 5px;
+            font-size: 20px;
+        }
+    }
+}

@@ -1,3 +1,6 @@
+.comic .comicCardBody .comicCardDescription .sinopsis, .comic .comicCardBody .comicCardDescription .formato, .comic .comicCardBody .comicCardDescription .editorial, .comic .comicCardBody .comicCardDescription .comicCardLinks a, .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno p {
+  font-size: 1.2rem; }
+
 * {
   padding: 0px;
   margin: 0px;
@@ -20,7 +23,7 @@ header {
   background-color: #202020;
   border-bottom: 1px solid #4a4a4a; }
 
-.container {
+.navbarContainer {
   width: 100%;
   max-width: 117rem;
   margin: 0 auto;
@@ -89,7 +92,7 @@ nav {
   display: block;
   position: absolute;
   border-top: 3px solid red;
-  background-color: grey;
+  background-color: #373737;
   z-index: 100;
   top: 16rem;
   opacity: 0;
@@ -190,33 +193,414 @@ form {
     display: flex;
     align-items: center; }
     form button:active {
-      color: red; }
+      color: red;
+      transition: 100ms; }
     form button:hover {
-      background-color: #373737; }
+      background-color: #373737;
+      transition: 300ms; }
 
 .activo {
   text-decoration: 3px red underline; }
 
-ul {
-  list-style: none outside none;
-  padding-left: 0;
-  margin: 0; }
-
-.demo .item {
-  margin-bottom: 60px; }
-
-.content-slider li {
-  text-align: center;
-  color: #FFF; }
-
-.content-slider h3 {
-  margin: 0;
-  padding: 70px 0; }
-
-.demo {
+.carousel {
   width: 100%;
-  padding: 8.5rem 0rem 0rem 0rem;
-  background-color: orange; }
+  padding: 10rem 0rem 0rem 0rem;
+  border-bottom: 1px solid #4a4a4a;
+  background-color: #282828; }
+  .carousel ul {
+    list-style: none outside none; }
+    .carousel ul img {
+      width: 200px;
+      border-radius: 1rem;
+      border: 2px solid #4a4a4a; }
 
-img {
-  width: 200px; }
+.comic {
+  padding: 1rem;
+  margin: 3rem;
+  background-color: #202020;
+  border-radius: 5px;
+  border: 1px solid #4a4a4a;
+  width: fit-content;
+  color: white; }
+  .comic .comicTitle {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700; }
+  .comic .comicCardBody {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem; }
+    .comic .comicCardBody img {
+      border-radius: 5px;
+      max-width: 300px;
+      border: 1px solid #4a4a4a; }
+    .comic .comicCardBody .comicCardDescription .sinopsis {
+      max-width: 30rem; }
+    .comic .comicCardBody .comicCardDescription .comicCardLinks {
+      text-align: center;
+      margin: 2rem 0rem; }
+      .comic .comicCardBody .comicCardDescription .comicCardLinks a {
+        display: block;
+        margin: 1rem 0rem; }
+    .comic .comicCardBody .comicCardDescription .redes {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: nowrap; }
+      .comic .comicCardBody .comicCardDescription .redes a {
+        color: white; }
+        .comic .comicCardBody .comicCardDescription .redes a:hover {
+          color: red;
+          transition: ease 600ms; }
+        .comic .comicCardBody .comicCardDescription .redes a i {
+          font-size: 2rem; }
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr; }
+  .mainContainer .asideContainer {
+    margin: 3rem; }
+    .mainContainer .asideContainer img {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #4a4a4a;
+      margin: 1rem; }
+
+.sobreNosotros .sobreNosotrosPadre {
+  color: white; }
+  .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 15rem; }
+    .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos img {
+      margin-bottom: 10rem; }
+    .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno h1 {
+      letter-spacing: 8px;
+      font-size: 15px; }
+    .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno h2 {
+      font-size: 30px; }
+    .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno p {
+      margin: 0px;
+      max-width: 500px; }
+    .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno .h2NecesitasAyuda {
+      font-size: 20px;
+      margin-bottom: 1.3rem; }
+    .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno a {
+      border-radius: 10px;
+      padding: 0.8rem 2.5rem;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border: 1px solid #4a4a4a; }
+      .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno a:hover {
+        background-color: #ff6e6e;
+        transition: 600ms; }
+  .sobreNosotros .sobreNosotrosPadre .sobreNosDosPadre {
+    padding: 1.5rem 0rem 3rem 0rem;
+    border-top: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+    color: white;
+    background-color: #202020; }
+    .sobreNosotros .sobreNosotrosPadre .sobreNosDosPadre .tituloSobreNosDos {
+      text-align: center;
+      padding-bottom: 1.5rem;
+      letter-spacing: 3px;
+      font-size: 30px; }
+    .sobreNosotros .sobreNosotrosPadre .sobreNosDosPadre .sobreNosDos {
+      display: flex;
+      justify-content: space-evenly; }
+      .sobreNosotros .sobreNosotrosPadre .sobreNosDosPadre .sobreNosDos .ofrecemos {
+        max-height: 300px;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        background-color: #202020;
+        border: 1px solid #4a4a4a; }
+        .sobreNosotros .sobreNosotrosPadre .sobreNosDosPadre .sobreNosDos .ofrecemos i {
+          font-size: 2rem; }
+        .sobreNosotros .sobreNosotrosPadre .sobreNosDosPadre .sobreNosDos .ofrecemos h3 {
+          font-size: 25px;
+          font-weight: 700; }
+        .sobreNosotros .sobreNosotrosPadre .sobreNosDosPadre .sobreNosDos .ofrecemos p {
+          max-width: 200px; }
+        .sobreNosotros .sobreNosotrosPadre .sobreNosDosPadre .sobreNosDos .ofrecemos .lecturaDigital {
+          max-width: 250px;
+          margin: auto; }
+
+.sobreNosotros .sobreNosotrosPadreDos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: white;
+  padding: 10rem; }
+  .sobreNosotros .sobreNosotrosPadreDos .redesSociales {
+    padding: 3rem;
+    background-color: #202020;
+    border: 1px solid #4a4a4a; }
+    .sobreNosotros .sobreNosotrosPadreDos .redesSociales .iconsRedes {
+      text-align: center;
+      font-size: 2.5rem;
+      padding-top: 1rem; }
+      .sobreNosotros .sobreNosotrosPadreDos .redesSociales .iconsRedes i {
+        margin: 0rem 0.4rem;
+        color: white;
+        font-size: 3rem; }
+        .sobreNosotros .sobreNosotrosPadreDos .redesSociales .iconsRedes i:hover {
+          color: red;
+          transition: 600ms; }
+  .sobreNosotros .sobreNosotrosPadreDos .semiContacto {
+    padding: 3rem;
+    background-color: #202020;
+    border-radius: 1rem;
+    border: 1px solid #4a4a4a; }
+    .sobreNosotros .sobreNosotrosPadreDos .semiContacto h3 {
+      padding-bottom: 1.5rem;
+      text-align: center; }
+    .sobreNosotros .sobreNosotrosPadreDos .semiContacto p {
+      max-width: 400px; }
+
+.sobreNosotros .sobreNosotrosPadreTres {
+  padding: 0rem 0rem 3rem 0rem;
+  border-top: 1px solid #4a4a4a;
+  border-bottom: 1px solid #4a4a4a;
+  color: white; }
+  .sobreNosotros .sobreNosotrosPadreTres .preguntasFrecuentes h3 {
+    padding: 3rem;
+    font-size: 30px;
+    letter-spacing: 4px; }
+  .sobreNosotros .sobreNosotrosPadreTres .preguntasFrecuentes div {
+    border-top: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+    padding: 1rem;
+    background-color: #202020; }
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 1rem;
+  padding: 3rem;
+  color: white;
+  background-color: #202020;
+  border-top: 1px solid #4a4a4a; }
+  footer .contenedorLogo {
+    margin-left: 3rem; }
+    footer .contenedorLogo a {
+      font-size: 3rem;
+      text-decoration: none;
+      color: white; }
+      footer .contenedorLogo a:hover {
+        color: white; }
+  footer h4 {
+    padding-bottom: 1rem;
+    font-size: 2rem; }
+  footer .copy {
+    font-size: 12px; }
+  footer .sobreNosDiv {
+    padding: 1rem;
+    margin-bottom: 3rem; }
+    footer .sobreNosDiv p {
+      max-width: 250px;
+      font-size: 1.2rem; }
+  footer .contactDiv {
+    padding: 1rem; }
+    footer .contactDiv .contactInfo {
+      display: block;
+      font-size: 1.2rem; }
+  footer .redesDiv {
+    padding: 1rem; }
+    footer .redesDiv .linkRedes {
+      text-decoration: none;
+      display: block;
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+      color: white; }
+      footer .redesDiv .linkRedes:hover i {
+        color: red;
+        transition: 600ms; }
+      footer .redesDiv .linkRedes i {
+        font-size: 1.5rem; }
+
+.comicTituloPadre {
+  border: 1px solid #4a4a4a;
+  width: fit-content;
+  padding: 3rem;
+  color: white;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  background-color: #202020; }
+  .comicTituloPadre .comicTitulo {
+    letter-spacing: 5px;
+    font-size: 3rem;
+    margin-bottom: 1.5rem; }
+  .comicTituloPadre .comicMain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .comicTituloPadre .comicMain img {
+      border-radius: 5px;
+      border: 1px solid #4a4a4a; }
+    .comicTituloPadre .comicMain .card-body {
+      padding: 0rem 1rem; }
+      .comicTituloPadre .comicMain .card-body .cardDescripcion {
+        max-width: 300px;
+        margin: auto;
+        font-size: 1.5rem; }
+      .comicTituloPadre .comicMain .card-body .cardLinks {
+        text-align: center;
+        padding: 1rem; }
+        .comicTituloPadre .comicMain .card-body .cardLinks a {
+          display: block;
+          font-size: 1.5rem; }
+      .comicTituloPadre .comicMain .card-body .redesComicCard {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        margin-top: 2rem; }
+        .comicTituloPadre .comicMain .card-body .redesComicCard i {
+          font-size: 2.5rem; }
+          .comicTituloPadre .comicMain .card-body .redesComicCard i:hover {
+            color: red;
+            transition: 600ms; }
+
+.comicsRelacionados {
+  padding: 3rem 0rem;
+  border-top: 1px solid #4a4a4a;
+  color: white; }
+  .comicsRelacionados h3, .comicsRelacionados h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    padding-bottom: 2rem;
+    font-size: 2.4rem; }
+  .comicsRelacionados .comicsRelacionadosImg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    place-items: center;
+    padding: 0rem 15rem 3rem 15rem;
+    gap: 3rem; }
+    .comicsRelacionados .comicsRelacionadosImg img {
+      border-radius: 0.25rem;
+      border: 1px solid #4a4a4a; }
+      .comicsRelacionados .comicsRelacionadosImg img:hover {
+        transform: scale(102%);
+        transition: 0.3s; }
+
+.instruccionesContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5rem;
+  color: white;
+  margin-top: 10rem; }
+  .instruccionesContainer .instruccionesUno {
+    padding: 2rem;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    height: fit-content;
+    background-color: #202020; }
+    .instruccionesContainer .instruccionesUno h1 {
+      text-align: center;
+      letter-spacing: 5px;
+      padding-bottom: 2rem;
+      font-size: 30px; }
+    .instruccionesContainer .instruccionesUno ol {
+      margin: 2rem; }
+      .instruccionesContainer .instruccionesUno ol li {
+        max-width: 600px;
+        font-size: 1.2rem; }
+    .instruccionesContainer .instruccionesUno h2 {
+      font-size: 20px;
+      padding-left: 2rem; }
+    .instruccionesContainer .instruccionesUno .iframeVid {
+      border-radius: 10px;
+      border: 1px solid #4a4a4a;
+      margin: 0rem 0rem 1rem 0rem; }
+    .instruccionesContainer .instruccionesUno .iconsRedesInstrucciones {
+      display: flex;
+      justify-content: space-evenly; }
+      .instruccionesContainer .instruccionesUno .iconsRedesInstrucciones i {
+        font-size: 2rem;
+        color: white; }
+        .instruccionesContainer .instruccionesUno .iconsRedesInstrucciones i:hover {
+          transition: 600ms;
+          color: red; }
+  .instruccionesContainer .instruccionesDos {
+    padding: 2rem;
+    margin-top: 5rem; }
+    .instruccionesContainer .instruccionesDos h3 {
+      letter-spacing: 5px;
+      font-size: 20px; }
+
+.containerContacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 3rem 0rem;
+  border-top: 1px solid #4a4a4a; }
+  .containerContacto iframe {
+    border: 3rem solid #4a4a4a;
+    border-radius: 1rem; }
+  .containerContacto form {
+    display: initial;
+    color: white;
+    background-color: #202020;
+    padding: 3rem 3rem 2rem 3rem;
+    border: 1px solid #4a4a4a;
+    border-radius: 1rem; }
+    .containerContacto form input {
+      border-radius: 1rem; }
+    .containerContacto form .btn {
+      background-color: red;
+      border-radius: 1rem;
+      border: 1px solid #4a4a4a; }
+      .containerContacto form .btn:hover {
+        background-color: #ff5858;
+        transition: ease 300ms; }
+
+.imgContainer {
+  max-width: 200px;
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 0rem 1rem 1rem 0rem;
+  border-radius: 5px;
+  border: 1px solid #4a4a4a; }
+  .imgContainer:hover img {
+    transform: scale(1.1);
+    transition: ease 500ms; }
+  .imgContainer:hover .leerMasDiv {
+    opacity: 1;
+    visibility: visible;
+    transition: 800ms; }
+  .imgContainer:hover .descriptionContainer {
+    background-color: rgba(0, 0, 0, 0.487);
+    transition: ease 500ms; }
+  .imgContainer:hover .description {
+    transform: translateY(-101%);
+    transition: all 500ms ease-out; }
+  .imgContainer .descriptionContainer {
+    position: absolute;
+    top: 55%;
+    width: 198px;
+    height: 136px; }
+  .imgContainer .description {
+    color: white; }
+    .imgContainer .description h3 {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0.5rem 0rem 0rem 0rem; }
+    .imgContainer .description p {
+      font-size: 0.8rem;
+      margin: 0rem 0.5rem 0.5rem 0.5rem; }
+    .imgContainer .description .btnLeerMas {
+      font-size: 1.2rem;
+      padding: 0.8rem 0rem;
+      border-radius: 5px;
+      background-color: red;
+      text-align: center;
+      margin: 0rem; }
+      .imgContainer .description .btnLeerMas:hover {
+        background-color: #ff4242; }
+
+body {
+  background-color: #181818; }
