@@ -1,0 +1,39 @@
+//PAGINA EDITORIAL
+.tituloEditoriales {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.editorialesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+    .editorialesCardContainer {
+        color: white;
+        background-color: $color-negro-uno;
+        border-radius: 5px;
+        border: $border;
+
+        .editorialCard {
+            padding: 1rem;
+            text-align: center;
+            .editorialesTitle {
+                padding-top: 1rem;
+            }
+
+            .editorialesDescription {
+                max-width: 172px;
+            }
+        }
+    }
+}
+
+//PAGINA MARVEL, DC, ETC
+
+.editorialComicsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+}
