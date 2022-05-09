@@ -17,7 +17,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--LINK DEL MAIN CSS-->
     <link rel="stylesheet" href="/css/main.css">
-    <title>Pagina Comics - Sobre nosotros</title>
+    <title>Pagina Comics - Batman</title>
 </head>
 
 <body>
@@ -34,13 +34,22 @@
                 <h1 class="logo">LOGO</h1>
                 <ul class="nav-list">
                     <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="#">Explorar<i class="bi bi-caret-down-fill"></i></a>
+                    <li><a class="activo" href="#">Explorar<i class="bi bi-caret-down-fill"></i></a>
                         <ul class="sub-menu">
-                            <li><a href="#">Personajes<i class="bi bi-caret-down-fill"></i></a>
+                            <li><a class="activo" href="/pages/personajes.html">Personajes<i class="bi bi-caret-down-fill"></i></a>
                                 <ul class="sub-menu">
-                                    <li><a href="#">Wolverine</a></li>
-                                    <li><a href="#">Capitan America</a></li>
-                                    <li><a href="#">Iron Man</a></li>
+                                    <li><a href="/pages/personajes/wolverine.html">Wolverine</a></li>
+                                    <li><a class="activo" href="/pages/personajes/capitanamerica.html">Capitan America</a></li>
+                                    <li><a href="/pages/personajes/hawkeye.html">Hawkeye</a></li>
+                                    <li><a href="/pages/personajes/deadpool.html">Deadpool</a></li>
+                                    <li><a href="/pages/personajes/drstrange.html">Dr. Strange</a></li>
+                                    <li><a href="/pages/personajes/thor.html">Thor</a></li>
+                                    <li><a href="/pages/personajes/panteranegra.html">Pantera Negra</a></li>
+                                    <li><a href="/pages/personajes/psylocke.html">Psylocke</a></li>
+                                    <li><a href="/pages/personajes/nightcrawler.html">Nightcrawler</a></li>
+                                    <li><a href="/pages/personajes/spiderman.html">SpiderMan</a></li>
+                                    <li><a href="/pages/personajes/ironman.html">Iron Man</a></li>
+                                    <li><a href="/pages/personajes/punisher.html">The Punisher</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Editoriales<i class="bi bi-caret-down-fill"></i></a>
@@ -66,14 +75,12 @@
     <!--INICIO DE MAIN-->
 
     <main>
-        <!--CATALOGO-->
-
-        <section class="mainContainer mainContainerComicPersonaje">
+        <section class="mainContainer personajesGridContainer">
             <div class="asideContainerLeft">
                 <h3>Tendencias</h1>
                     <div class="imgContainer">
                         <a href="#"><img src="/images/comics/death of wolverine.jpg" alt="comics aside tendencias 1"
-                                width="200">
+                                width="200" height="308">
                             <figure class="descriptionContainer">
                             </figure>
                             <div class="description">
@@ -87,7 +94,7 @@
                         </a>
                     </div>
                     <div class="imgContainer">
-                        <a href="#"><img src="/images/comics/1536.jpg" alt="comics aside tendencias 1" width="200">
+                        <a href="#"><img src="/images/comics/1536.jpg" alt="comics aside tendencias 2" width="200" height="308">
                             <figure class="descriptionContainer">
                             </figure>
                             <div class="description">
@@ -102,7 +109,7 @@
                     <h3>Recien Agregados</h3>
                     <div class="imgContainer">
                         <a href="#"><img src="/images/comics/House_of_M_01_Joe_Quesada_Variant.jpg"
-                                alt="comics aside tendencias 1" width="200">
+                                alt="comics aside recien agregados 3" width="200" height="308">
                             <figure class="descriptionContainer">
                             </figure>
                             <div class="description">
@@ -115,7 +122,7 @@
                         </a>
                     </div>
                     <div class="imgContainer">
-                        <a href="#"><img src="/images/comics/inferno.png" alt="comics aside tendencias 1" width="200"
+                        <a href="#"><img src="/images/comics/inferno.png" alt="comics aside recien agregados 3" width="200"
                                 height="308">
                             <figure class="descriptionContainer">
                             </figure>
@@ -129,21 +136,67 @@
                         </a>
                     </div>
             </div>
-            <div class="comicsContainer">
+            <div class="comicsContainer personajeComicContainer">
+                <h1 class="text-center text-light mt-5">Batman</h1>
                 <div class="comic">
                     <div class="subContenedor">
-                        <h1 class="comicTitle">Batman Hush</h1>
+                        <h1 class="comicTitle">Batman - The City Of Bane</h1>
                         <div class="comicCardBody">
-                            <img class="img-fluid" src="/images/comics/batmanhush.jpg" alt="Portada Comic kick ass 2"
-                                width="300px">
+                            <img class="img-fluid" src="/images/comics/Batman-The-City-Of-Bane-comic.webp"
+                                alt="Portada Comic 1" width="300px">
                             <div class="comicCardDescription">
-                                <p class="sinopsis">En esta historia de asesinato, misterio y romance, Batman emprende
-                                    una sencilla
-                                    misión para descubrir la identidad del misterioso villano que causa estragos en
-                                    su vida conocido como Hush...
+                                <p class="sinopsis">El Caballero Nocturno tenía la sospecha de que había alguien acechando en las sombras conspirando contra él. Ha habido una mano invisible orquestando estos eventos.
+                                Y aunque el verdadero villano aún no se ha revelado, sus secuaces están comenzando a dar un paso adelante y derribar al Murciélago de una vez por todas, comenzando con Thomas Wayne, el Batman del universo Flashpoint.   
+                                Justo cuando sus enemigos pensaban que lo habían logrado con Bane al mando, Batman está de regreso en Gotham y está listo para recordarles cómo se siente la justicia… y cómo duele cuando te golpean en la cara. Pero, ¿Batman está listo para enfrentarse al enemigo que lo derrotó peor que cualquier otro que haya venido antes?
                                 </p>
                                 <p class="formato">Formato: CBR</p>
-                                <p class="editorial">Editorial: Marvel</p>
+                                <p class="editorial">Editorial: DC</p>
+                                <div class="comicCardLinks">
+                                    <a href="#">Link de descarga</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="redes">
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="comic">
+                    <div class="subContenedor">
+                        <h1 class="comicTitle">Batman - Fear State Alpha</h1>
+                        <div class="comicCardBody">
+                            <img class="img-fluid" src="/images/comics/batman3.webp"
+                                alt="Portada Comic 2" width="300px">
+                            <div class="comicCardDescription">
+                                <p class="sinopsis">El evento de más de un año en proceso comienza Fear State se instala en Gotham City, ¡y nadie está a salvo! Abrumados por la doble amenaza del Espantapájaros y el Pacificador-01, Batman y sus aliados han estado un paso atrás desde los eventos de Infinite Frontier # 0 y con la llegada de un misterioso anti-Oracle y el regreso de Poison Ivy, Batman podría haberlo hecho. más de lo que puede manejar!
+                                </p>
+                                <p class="formato">Formato: CBR</p>
+                                <p class="editorial">Editorial: DC</p>
+                                <div class="comicCardLinks">
+                                    <a href="#">Link de descarga</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="redes">
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="comic">
+                    <div class="subContenedor">
+                        <h1 class="comicTitle">Batman - Death of the Family</h1>
+                        <div class="comicCardBody">
+                            <img class="img-fluid" src="/images/comics/batman4.jpg"
+                                alt="Portada Comic 3" width="300px">
+                            <div class="comicCardDescription">
+                                <p class="sinopsis">Death of the family es una línea argumental crossover que entrelaza un total 23 cómics protagonizados por Batman y sus aliados. Su argumento principal es desarrollado en nueve series de historietas y cuenta con el regreso del villano conocido como Joker. El personaje aparece buscando vengarse de varios héroes y villanos del Universo DC, entre los cuales están, Robin, Nightwing, Batgirl, el jefe de policía James Gordon, Red Hood y Batman.
+                                </p>
+                                <p class="formato">Formato: CBR</p>
+                                <p class="editorial">Editorial: DC</p>
                                 <div class="comicCardLinks">
                                     <a href="#">Link de descarga</a>
                                 </div>
@@ -160,7 +213,7 @@
             <div class="asideContainer">
                 <div class="asideItem">
                     <h3>¿Sos nuevo?</h3>
-                    <p>Visitá nuestra seccion de <a href="./pages/instrucciones.html">Instrucciones</a></p>
+                    <p>Visitá nuestra seccion de <a href="/pages/instrucciones.html">Instrucciones</a></p>
                 </div>
                 <div class="asideItem">
                     <h3>¿Tenes alguna pregunta?</h3>
@@ -172,19 +225,6 @@
                     <p>Visitá nuestra seccion de <a href="#">Preguntas frecuentes</a> o preguntanos en la seccion <a
                             href="$">Contacto</a></p>
                 </div>
-            </div>
-        </section>
-
-        <!--INICIO DE "COMICS RELACIONADOS"-->
-
-        <section class="comicsRelacionados">
-            <h2>Comics Relacionados</h2>
-            <div class="comicsRelacionadosImg">
-                <a href="#"><img src="/images/comics/drstrange.jpg" alt="Comic 1 relacionado" width="250"></a>
-                <a href="#"><img src="/images/comics/Old_Man_Logan_Vol_2_25.png" alt="Comic 2 relacionado"
-                        width="250"></a>
-                <a href="#"><img src="/images/comics/penguin.jpg" alt="Comic 3 relacionado" width="250"></a>
-                <a href="#"><img src="/images/comics/inhumans.png" alt="Comic 4 relacionado" width="250"></a>
             </div>
         </section>
     </main>
@@ -193,7 +233,7 @@
 
     <footer>
         <div class="contenedorLogo">
-            <a href="./index.html">PAGINA COMICS</a>
+            <a href="/index.html">PAGINA COMICS</a>
             <h4 class="copy">© 2022 Pagina Comics</h4>
         </div>
         <div class="sobreNosDiv">
