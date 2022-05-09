@@ -1,0 +1,42 @@
+.personajesGridContainer {
+    margin-top: 10rem;
+
+    .personajesContainer {
+        h1 {
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .personajesSubContainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+
+            .personajesCardContainer {
+                .cardPersonaje {
+                    width: fit-content;
+                    background-color: $color-negro-uno;
+                    border: $border;
+                    border-radius: 0.5rem;
+                    color: white;
+
+                    .cardPersonajeDescripcion {
+                        padding: 1rem;
+                        text-align: center;
+
+                        h3 {
+                            text-align: center;
+                        }
+
+                        p {
+                            text-align: start;
+                            max-width: 150px;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

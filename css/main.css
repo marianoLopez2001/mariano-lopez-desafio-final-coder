@@ -1,4 +1,4 @@
-.comic .comicCardBody .comicCardDescription .sinopsis, .comic .comicCardBody .comicCardDescription .formato, .comic .comicCardBody .comicCardDescription .editorial, .comic .comicCardBody .comicCardDescription .comicCardLinks a, .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno p {
+.comic .subContenedor .comicCardBody .comicCardDescription .sinopsis, .comic .subContenedor .comicCardBody .comicCardDescription .formato, .comic .subContenedor .comicCardBody .comicCardDescription .editorial, .comic .subContenedor .comicCardBody .comicCardDescription .comicCardLinks a, .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno p {
   font-size: 1.2rem; }
 
 * {
@@ -222,48 +222,66 @@ form {
   border: 1px solid #4a4a4a;
   width: fit-content;
   color: white; }
-  .comic .comicTitle {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 700; }
-  .comic .comicCardBody {
+  .comic .subContenedor {
     display: flex;
-    flex-flow: row wrap;
-    gap: 1rem; }
-    .comic .comicCardBody img {
-      border-radius: 5px;
-      max-width: 300px;
-      border: 1px solid #4a4a4a; }
-    .comic .comicCardBody .comicCardDescription .sinopsis {
-      max-width: 30rem; }
-    .comic .comicCardBody .comicCardDescription .comicCardLinks {
+    flex-direction: column; }
+    .comic .subContenedor .comicTitle {
       text-align: center;
-      margin: 2rem 0rem; }
-      .comic .comicCardBody .comicCardDescription .comicCardLinks a {
-        display: block;
-        margin: 1rem 0rem; }
-    .comic .comicCardBody .comicCardDescription .redes {
+      margin: 1rem 0rem 2rem 0rem;
+      font-weight: 700; }
+    .comic .subContenedor .comicCardBody {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1rem; }
+      .comic .subContenedor .comicCardBody img {
+        border-radius: 5px;
+        max-width: 300px;
+        border: 1px solid #4a4a4a; }
+      .comic .subContenedor .comicCardBody .comicCardDescription .sinopsis {
+        max-width: 30rem; }
+      .comic .subContenedor .comicCardBody .comicCardDescription .comicCardLinks {
+        text-align: center;
+        margin: 2rem 0rem; }
+        .comic .subContenedor .comicCardBody .comicCardDescription .comicCardLinks a {
+          display: block;
+          margin: 1rem 0rem; }
+    .comic .subContenedor .redes {
       display: flex;
       justify-content: space-evenly;
-      flex-wrap: nowrap; }
-      .comic .comicCardBody .comicCardDescription .redes a {
+      flex-wrap: nowrap;
+      border-top: 1px solid #4a4a4a;
+      padding-top: 1rem;
+      margin-top: 1rem; }
+      .comic .subContenedor .redes a {
         color: white; }
-        .comic .comicCardBody .comicCardDescription .redes a:hover {
+        .comic .subContenedor .redes a:hover {
           color: red;
           transition: ease 600ms; }
-        .comic .comicCardBody .comicCardDescription .redes a i {
+        .comic .subContenedor .redes a i {
           font-size: 2rem; }
 
 .mainContainer {
-  display: grid;
-  grid-template-columns: 3fr 1fr; }
+  display: flex;
+  justify-content: space-between; }
+  .mainContainer .asideContainerLeft {
+    color: white;
+    padding: 2rem; }
+    .mainContainer .asideContainerLeft h3 {
+      padding: 1rem 0rem;
+      font-size: 2rem; }
   .mainContainer .asideContainer {
-    margin: 3rem; }
-    .mainContainer .asideContainer img {
-      width: 100%;
-      border-radius: 5px;
+    margin-top: 10rem; }
+    .mainContainer .asideContainer .asideItem {
+      background-color: #202020;
+      width: 300px;
+      height: 150px;
+      margin: 3rem;
+      padding: 2rem;
+      border-radius: 1rem;
       border: 1px solid #4a4a4a;
-      margin: 1rem; }
+      color: white; }
+      .mainContainer .asideContainer .asideItem h3 {
+        font-weight: 700; }
 
 .sobreNosotros .sobreNosotrosPadre {
   color: white; }
@@ -420,47 +438,8 @@ footer {
       footer .redesDiv .linkRedes i {
         font-size: 1.5rem; }
 
-.comicTituloPadre {
-  border: 1px solid #4a4a4a;
-  width: fit-content;
-  padding: 3rem;
-  color: white;
-  margin-top: 10rem;
-  margin-bottom: 3rem;
-  background-color: #202020; }
-  .comicTituloPadre .comicTitulo {
-    letter-spacing: 5px;
-    font-size: 3rem;
-    margin-bottom: 1.5rem; }
-  .comicTituloPadre .comicMain {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-    .comicTituloPadre .comicMain img {
-      border-radius: 5px;
-      border: 1px solid #4a4a4a; }
-    .comicTituloPadre .comicMain .card-body {
-      padding: 0rem 1rem; }
-      .comicTituloPadre .comicMain .card-body .cardDescripcion {
-        max-width: 300px;
-        margin: auto;
-        font-size: 1.5rem; }
-      .comicTituloPadre .comicMain .card-body .cardLinks {
-        text-align: center;
-        padding: 1rem; }
-        .comicTituloPadre .comicMain .card-body .cardLinks a {
-          display: block;
-          font-size: 1.5rem; }
-      .comicTituloPadre .comicMain .card-body .redesComicCard {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        margin-top: 2rem; }
-        .comicTituloPadre .comicMain .card-body .redesComicCard i {
-          font-size: 2.5rem; }
-          .comicTituloPadre .comicMain .card-body .redesComicCard i:hover {
-            color: red;
-            transition: 600ms; }
+.mainContainerComicPersonaje {
+  margin-top: 10rem; }
 
 .comicsRelacionados {
   padding: 3rem 0rem;
@@ -559,7 +538,7 @@ footer {
 
 .imgContainer {
   max-width: 200px;
-  max-height: 300px;
+  max-height: 308px;
   overflow: hidden;
   position: relative;
   margin: 0rem 1rem 1rem 0rem;
@@ -601,6 +580,32 @@ footer {
       margin: 0rem; }
       .imgContainer .description .btnLeerMas:hover {
         background-color: #ff4242; }
+
+.personajesGridContainer {
+  margin-top: 10rem; }
+  .personajesGridContainer .personajesContainer h1 {
+    color: white;
+    padding: 3rem;
+    text-align: center; }
+  .personajesGridContainer .personajesContainer .personajesSubContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem; }
+    .personajesGridContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje {
+      width: fit-content;
+      background-color: #202020;
+      border: 1px solid #4a4a4a;
+      border-radius: 0.5rem;
+      color: white; }
+      .personajesGridContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje .cardPersonajeDescripcion {
+        padding: 1rem;
+        text-align: center; }
+        .personajesGridContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje .cardPersonajeDescripcion h3 {
+          text-align: center; }
+        .personajesGridContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje .cardPersonajeDescripcion p {
+          text-align: start;
+          max-width: 150px;
+          margin: auto; }
 
 body {
   background-color: #181818; }

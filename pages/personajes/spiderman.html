@@ -17,7 +17,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--LINK DEL MAIN CSS-->
     <link rel="stylesheet" href="/css/main.css">
-    <title>Pagina Comics - Sobre nosotros</title>
+    <title>Pagina Comics - Spider Man</title>
 </head>
 
 <body>
@@ -34,13 +34,23 @@
                 <h1 class="logo">LOGO</h1>
                 <ul class="nav-list">
                     <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="#">Explorar<i class="bi bi-caret-down-fill"></i></a>
+                    <li><a class="activo" href="#">Explorar<i class="bi bi-caret-down-fill"></i></a>
                         <ul class="sub-menu">
-                            <li><a href="#">Personajes<i class="bi bi-caret-down-fill"></i></a>
+                            <li><a class="activo" href="/pages/personajes.html">Personajes<i
+                                        class="bi bi-caret-down-fill"></i></a>
                                 <ul class="sub-menu">
-                                    <li><a href="#">Wolverine</a></li>
-                                    <li><a href="#">Capitan America</a></li>
-                                    <li><a href="#">Iron Man</a></li>
+                                    <li><a href="/pages/personajes/wolverine.html">Wolverine</a></li>
+                                    <li><a href="/pages/personajes/capitanamerica.html">Capitan America</a></li>
+                                    <li><a href="/pages/personajes/hawkeye.html">Hawkeye</a></li>
+                                    <li><a href="/pages/personajes/deadpool.html">Deadpool</a></li>
+                                    <li><a href="/pages/personajes/drstrange.html">Dr. Strange</a></li>
+                                    <li><a href="/pages/personajes/thor.html">Thor</a></li>
+                                    <li><a href="/pages/personajes/panteranegra.html">Pantera Negra</a></li>
+                                    <li><a href="/pages/personajes/psylocke.html">Psylocke</a></li>
+                                    <li><a href="/pages/personajes/nightcrawler.html">Nightcrawler</a></li>
+                                    <li><a class="activo" href="/pages/personajes/spiderman.html">SpiderMan</a></li>
+                                    <li><a href="/pages/personajes/ironman.html">Iron Man</a></li>
+                                    <li><a href="/pages/personajes/punisher.html">The Punisher</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Editoriales<i class="bi bi-caret-down-fill"></i></a>
@@ -66,14 +76,12 @@
     <!--INICIO DE MAIN-->
 
     <main>
-        <!--CATALOGO-->
-
-        <section class="mainContainer mainContainerComicPersonaje">
+        <section class="mainContainer personajesGridContainer">
             <div class="asideContainerLeft">
                 <h3>Tendencias</h1>
                     <div class="imgContainer">
                         <a href="#"><img src="/images/comics/death of wolverine.jpg" alt="comics aside tendencias 1"
-                                width="200">
+                                width="200" height="308">
                             <figure class="descriptionContainer">
                             </figure>
                             <div class="description">
@@ -87,7 +95,8 @@
                         </a>
                     </div>
                     <div class="imgContainer">
-                        <a href="#"><img src="/images/comics/1536.jpg" alt="comics aside tendencias 1" width="200">
+                        <a href="#"><img src="/images/comics/1536.jpg" alt="comics aside tendencias 2" width="200"
+                                height="308">
                             <figure class="descriptionContainer">
                             </figure>
                             <div class="description">
@@ -102,7 +111,7 @@
                     <h3>Recien Agregados</h3>
                     <div class="imgContainer">
                         <a href="#"><img src="/images/comics/House_of_M_01_Joe_Quesada_Variant.jpg"
-                                alt="comics aside tendencias 1" width="200">
+                                alt="comics aside recien agregados 3" width="200" height="308">
                             <figure class="descriptionContainer">
                             </figure>
                             <div class="description">
@@ -115,8 +124,8 @@
                         </a>
                     </div>
                     <div class="imgContainer">
-                        <a href="#"><img src="/images/comics/inferno.png" alt="comics aside tendencias 1" width="200"
-                                height="308">
+                        <a href="#"><img src="/images/comics/inferno.png" alt="comics aside recien agregados 3"
+                                width="200" height="308">
                             <figure class="descriptionContainer">
                             </figure>
                             <div class="description">
@@ -129,18 +138,62 @@
                         </a>
                     </div>
             </div>
-            <div class="comicsContainer">
+            <div class="comicsContainer personajeComicContainer">
+                <h1 class="text-center text-light mt-5">Spider Man</h1>
                 <div class="comic">
                     <div class="subContenedor">
-                        <h1 class="comicTitle">Batman Hush</h1>
+                        <h1 class="comicTitle">Spider-Man 2099 Vol 4</h1>
                         <div class="comicCardBody">
-                            <img class="img-fluid" src="/images/comics/batmanhush.jpg" alt="Portada Comic kick ass 2"
+                            <img class="img-fluid" src="/images/comics/spiderman1.jpg" alt="Portada Comic 1"
                                 width="300px">
                             <div class="comicCardDescription">
-                                <p class="sinopsis">En esta historia de asesinato, misterio y romance, Batman emprende
-                                    una sencilla
-                                    misión para descubrir la identidad del misterioso villano que causa estragos en
-                                    su vida conocido como Hush...
+                                <p class="sinopsis">Miguel O Hara es una estrella en ascenso en Alchemax, pero su mundo está a punto de derrumbarse. El futuro del Universo Marvel está a punto de morir y el mundo necesita un héroe. Mientras Miguel enfrenta un destino del que ha tratado de huir toda su vida, los secretos de 2099 comienzan a desvelarse aquí.
+                                </p>
+                                <p class="formato">Formato: CBR</p>
+                                <p class="editorial">Editorial: Marvel</p>
+                                <div class="comicCardLinks">
+                                    <a href="#">Link de descarga</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="redes">
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="comic">
+                    <div class="subContenedor">
+                        <h1 class="comicTitle">Spider-Man 2099 Vol. 2</h1>
+                        <div class="comicCardBody">
+                            <img class="img-fluid" src="/images/comics/spiderman2.jpg" alt="Portada Comic 2"
+                                width="300px">
+                            <div class="comicCardDescription">
+                                <p class="sinopsis">Miguel OHara es Spider-Man en el año 2099, pero actualmente está atrapado en el año 2014. Su padre, quien es el jefe de una corporación malvada llamada Alchemax en 2099, lo dejó varado aquí en 2099. Pero en 2014, Alechmax acaba de formarse. ¡y Miguel tiene la oportunidad de detener su corrupción antes de que comience! Pensarías que ser un hombre fuera de tiempo te convertiría en un hombre sin enemigos, pero Spider-Man 2099 está a punto de descubrir que no es el único que espera un mañana mejor, uno que podría estar asegurado por El Ajustador eliminando a Miguel de la corriente del tiempo por completo!
+                                </p>
+                                <p class="formato">Formato: CBR</p>
+                                <p class="editorial">Editorial: Marvel</p>
+                                <div class="comicCardLinks">
+                                    <a href="#">Link de descarga</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="redes">
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="comic">
+                    <div class="subContenedor">
+                        <h1 class="comicTitle">Non-Stop Spider-Man</h1>
+                        <div class="comicCardBody">
+                            <img class="img-fluid" src="/images/comics/spiderman3.jpg" alt="Portada Comic 3"
+                                width="300px">
+                            <div class="comicCardDescription">
+                                <p class="sinopsis">¡Abróchate el cinturón, tigre! ¡Prepárate para el cómic más lleno de acción, palpitante y adrenalínico de todos los tiempos! Una vez que lees la página uno, ¡Spider-Man no se detiene! Un misterio en la Universidad Empire State lleva al lanzador de telarañas a una emocionante aventura que comienza en la parte alta de Manhattan y lo lleva por todo el mundo, enfrentando a Spidey contra villanos de Marvel, viejos y nuevos, y brindándote una aventura de Spider-Man (y un Spider-Man) como todos. del cual nunca has visto! Algo terrible les está sucediendo a los estudiantes de ESU, algunas de las mentes jóvenes más brillantes de Nueva York, y para salvar el día, esta vez tomará un lado de Peter Parker que ni usted ni Peter pensaron que existía. ¡Y el tiempo corre! Este libro no es para los débiles de corazón, ¡así que consulte con su médico antes de leerlo!
                                 </p>
                                 <p class="formato">Formato: CBR</p>
                                 <p class="editorial">Editorial: Marvel</p>
@@ -160,7 +213,7 @@
             <div class="asideContainer">
                 <div class="asideItem">
                     <h3>¿Sos nuevo?</h3>
-                    <p>Visitá nuestra seccion de <a href="./pages/instrucciones.html">Instrucciones</a></p>
+                    <p>Visitá nuestra seccion de <a href="/pages/instrucciones.html">Instrucciones</a></p>
                 </div>
                 <div class="asideItem">
                     <h3>¿Tenes alguna pregunta?</h3>
@@ -172,19 +225,6 @@
                     <p>Visitá nuestra seccion de <a href="#">Preguntas frecuentes</a> o preguntanos en la seccion <a
                             href="$">Contacto</a></p>
                 </div>
-            </div>
-        </section>
-
-        <!--INICIO DE "COMICS RELACIONADOS"-->
-
-        <section class="comicsRelacionados">
-            <h2>Comics Relacionados</h2>
-            <div class="comicsRelacionadosImg">
-                <a href="#"><img src="/images/comics/drstrange.jpg" alt="Comic 1 relacionado" width="250"></a>
-                <a href="#"><img src="/images/comics/Old_Man_Logan_Vol_2_25.png" alt="Comic 2 relacionado"
-                        width="250"></a>
-                <a href="#"><img src="/images/comics/penguin.jpg" alt="Comic 3 relacionado" width="250"></a>
-                <a href="#"><img src="/images/comics/inhumans.png" alt="Comic 4 relacionado" width="250"></a>
             </div>
         </section>
     </main>
@@ -193,7 +233,7 @@
 
     <footer>
         <div class="contenedorLogo">
-            <a href="./index.html">PAGINA COMICS</a>
+            <a href="/index.html">PAGINA COMICS</a>
             <h4 class="copy">© 2022 Pagina Comics</h4>
         </div>
         <div class="sobreNosDiv">

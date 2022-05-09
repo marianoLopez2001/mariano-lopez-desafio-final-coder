@@ -1,0 +1,35 @@
+.mainContainerComicPersonaje {
+    margin-top: 10rem;
+}
+
+.comicsRelacionados {
+    padding: 3rem 0rem;
+    border-top: $border;
+    color: white;
+
+    h3, h2 {
+        text-align: center;
+        letter-spacing: 5px;
+        padding-bottom: 2rem;
+        font-size: 2.4rem;
+    }
+
+    .comicsRelacionadosImg {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-content: center;
+        place-items: center;
+        padding: 0rem 15rem 3rem 15rem;
+        gap: 3rem;
+
+        img {
+            border-radius: 0.25rem;
+            border: $border;
+
+            &:hover {
+                transform: scale(102%);
+                transition: 0.3s;
+            }
+        }
+    }
+}

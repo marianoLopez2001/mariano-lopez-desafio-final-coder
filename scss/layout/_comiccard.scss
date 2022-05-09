@@ -7,60 +7,69 @@
         width: fit-content;
         color: white;
 
-        .comicTitle {
-            text-align: center;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .comicCardBody {
+        .subContenedor {
             display: flex;
-            flex-flow: row wrap;
-            gap: 1rem;
+            flex-direction: column;
 
-            img {
-                border-radius: 5px;
-                max-width: 300px;
-                border: $border;
+            .comicTitle {
+                text-align: center;
+                margin: 1rem 0rem 2rem 0rem;
+                font-weight: 700;
             }
 
-            .comicCardDescription {
-                .sinopsis {
-                    max-width: 30rem;
-                    @extend %parrafo-font-size;
+            .comicCardBody {
+                display: flex;
+                flex-flow: row wrap;
+                gap: 1rem;
+
+                img {
+                    border-radius: 5px;
+                    max-width: 300px;
+                    border: $border;
                 }
 
-                .formato {
-                    @extend %parrafo-font-size;
-                }
-
-                .editorial {
-                    @extend %parrafo-font-size;
-                }
-
-                .comicCardLinks {
-                    text-align: center;
-                    margin: 2rem 0rem;
-
-                    a {
-                        display: block;
-                        margin: 1rem 0rem;
+                .comicCardDescription {
+                    .sinopsis {
+                        max-width: 30rem;
                         @extend %parrafo-font-size;
                     }
+
+                    .formato {
+                        @extend %parrafo-font-size;
+                    }
+
+                    .editorial {
+                        @extend %parrafo-font-size;
+                    }
+
+                    .comicCardLinks {
+                        text-align: center;
+                        margin: 2rem 0rem;
+
+                        a {
+                            display: block;
+                            margin: 1rem 0rem;
+                            @extend %parrafo-font-size;
+                        }
+                    }
                 }
+            }
 
-                .redes {
-                    @include flex-evenly;
+            .redes {
+                @include flex-evenly;
+                border-top: $border;
+                padding-top: 1rem;
+                margin-top: 1rem;
+                a {
+                    color: white;
 
-                    a {
-                        color: white;
-                        &:hover {
-                            color: red;
-                            transition: ease 600ms;
-                        }
-                        i {
-                            font-size: 2rem;
-                        }
+                    &:hover {
+                        color: red;
+                        transition: ease 600ms;
+                    }
+
+                    i {
+                        font-size: 2rem;
                     }
                 }
             }

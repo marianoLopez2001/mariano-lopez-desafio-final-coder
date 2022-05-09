@@ -6,15 +6,17 @@
 @import "utilities/extends";
 @import "utilities/reset";
 @import "layout/navbar";
-@import "layout/carousel";
+@import "components/carousel";
 @import "layout/comiccard";
-@import "layout/index";
-@import "layout/sobrenosotros";
+@import "pages/index";
+@import "pages/sobrenosotros";
 @import "layout/footer";
-@import "layout/comic";
-@import "layout/instrucciones";
+@import "pages/comic";
+@import "pages/instrucciones";
 @import "layout/contacto";
 @import "layout/card";
+@import "pages/personajes";
+
 body {
     background-color: $color-negro-bg;
 }

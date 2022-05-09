@@ -1,0 +1,35 @@
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    
+    .asideContainerLeft {
+        color: white;
+        padding: 2rem;
+        h3 {
+            padding: 1rem 0rem;
+            font-size: 2rem;
+        }
+    }
+    .asideContainer {
+        margin-top: 10rem;
+        .asideItem {
+            background-color: $color-negro-uno;
+            width: 300px;
+            height: 150px;
+            margin: 3rem;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: $border;
+            color: white;
+
+            h3 {
+                font-weight: 700;
+            }
+            p {
+                
+            }
+            a {
+            }
+        }
+    }
+}
