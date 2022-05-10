@@ -1,17 +1,19 @@
 .mainContainer {
-    display: flex;
-    justify-content: space-between;
-    
+
     .asideContainerLeft {
         color: white;
+        margin-top: 15rem;
         padding: 2rem;
+
         .asideTitle {
             padding: 1rem 0rem;
             font-size: 2rem;
         }
     }
+
     .asideContainer {
-        margin-top: 10rem;
+        margin-top: 15rem;
+
         .asideItem {
             background-color: $color-negro-uno;
             width: 300px;
@@ -24,11 +26,6 @@
 
             h3 {
                 font-weight: 700;
-            }
-            p {
-                
-            }
-            a {
             }
         }
     }

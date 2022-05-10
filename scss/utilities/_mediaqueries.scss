@@ -1,0 +1,43 @@
+@media screen and (max-width:910px) {
+
+    .containerContacto {
+        form {
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width:1090px) {
+    .asideContainer {
+        display: none;
+    }
+
+    .asideContainerLeft {
+        display: none;
+    }
+
+    .personajesContainer {
+        place-items: center;
+    }
+}
+
+@media screen and (max-width:850px) {
+    footer {
+        grid-template-columns: repeat(2, 1fr) !important;
+        .contenedorLogo {
+            margin: 0rem;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {   
+    footer {
+        .contactDiv {
+            display: none;
+        }
+
+        .redesDiv {
+            display: none;
+        }
+    }
+}

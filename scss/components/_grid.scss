@@ -1,0 +1,50 @@
+//grid index
+
+//grid personajes
+
+.contenedorGrid {
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "left center right"
+                         "left center right"
+                         "left center right"
+                         "contacto contacto contacto"
+                         "footer footer footer";
+}
+
+
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.asideContainerLeft {
+    grid-area: left;
+}
+
+.personajesContainer, .comicsContainer {
+    grid-area: center;
+}
+
+.asideContainer {
+    grid-area: right;
+}
+
+.containerContacto {
+    grid-area: contacto;
+}
+
+footer {
+    grid-area: footer;
+}

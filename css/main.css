@@ -1,3 +1,27 @@
+@media screen and (max-width: 910px) {
+  .containerContacto form {
+    margin-top: 2rem; } }
+
+@media screen and (max-width: 1090px) {
+  .asideContainer {
+    display: none; }
+  .asideContainerLeft {
+    display: none; }
+  .personajesContainer {
+    place-items: center; } }
+
+@media screen and (max-width: 850px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr) !important; }
+    footer .contenedorLogo {
+      margin: 0rem; } }
+
+@media screen and (max-width: 425px) {
+  footer .contactDiv {
+    display: none; }
+  footer .redesDiv {
+    display: none; } }
+
 .comic .subContenedor .comicCardBody .comicCardDescription .sinopsis, .comic .subContenedor .comicCardBody .comicCardDescription .formato, .comic .subContenedor .comicCardBody .comicCardDescription .editorial, .comic .subContenedor .comicCardBody .comicCardDescription .comicCardLinks a, .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno p {
   font-size: 1.2rem; }
 
@@ -267,28 +291,27 @@ nav {
         .comic .subContenedor .redes a i {
           font-size: 2rem; }
 
-.mainContainer {
-  display: flex;
-  justify-content: space-between; }
-  .mainContainer .asideContainerLeft {
-    color: white;
-    padding: 2rem; }
-    .mainContainer .asideContainerLeft .asideTitle {
-      padding: 1rem 0rem;
-      font-size: 2rem; }
-  .mainContainer .asideContainer {
-    margin-top: 10rem; }
-    .mainContainer .asideContainer .asideItem {
-      background-color: #202020;
-      width: 300px;
-      height: 150px;
-      margin: 3rem;
-      padding: 2rem;
-      border-radius: 1rem;
-      border: 1px solid #4a4a4a;
-      color: white; }
-      .mainContainer .asideContainer .asideItem h3 {
-        font-weight: 700; }
+.mainContainer .asideContainerLeft {
+  color: white;
+  margin-top: 15rem;
+  padding: 2rem; }
+  .mainContainer .asideContainerLeft .asideTitle {
+    padding: 1rem 0rem;
+    font-size: 2rem; }
+
+.mainContainer .asideContainer {
+  margin-top: 15rem; }
+  .mainContainer .asideContainer .asideItem {
+    background-color: #202020;
+    width: 300px;
+    height: 150px;
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #4a4a4a;
+    color: white; }
+    .mainContainer .asideContainer .asideItem h3 {
+      font-weight: 700; }
 
 .sobreNosotros .sobreNosotrosPadre {
   color: white; }
@@ -407,14 +430,12 @@ footer {
   color: white;
   background-color: #202020;
   border-top: 1px solid #4a4a4a; }
-  footer .contenedorLogo {
-    margin-left: 3rem; }
-    footer .contenedorLogo a {
-      font-size: 3rem;
-      text-decoration: none;
+  footer .contenedorLogo a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: white; }
+    footer .contenedorLogo a:hover {
       color: white; }
-      footer .contenedorLogo a:hover {
-        color: white; }
   footer h4 {
     padding-bottom: 1rem;
     font-size: 2rem; }
@@ -588,28 +609,28 @@ footer {
       .imgContainer .description .btnLeerMas:hover {
         background-color: #ff4242; }
 
-.personajesGridContainer {
-  margin: 10rem 0rem 5rem 0rem; }
-  .personajesGridContainer .personajesContainer .personajesTitulo {
+.personajesContainer {
+  margin: 5rem 0rem 5rem 0rem; }
+  .personajesContainer .personajesContainer .personajesTitulo {
     color: white;
     padding: 3rem;
     text-align: center; }
-  .personajesGridContainer .personajesContainer .personajesSubContainer {
+  .personajesContainer .personajesContainer .personajesSubContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem; }
-    .personajesGridContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje {
+    .personajesContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje {
       width: fit-content;
       background-color: #202020;
       border: 1px solid #4a4a4a;
       border-radius: 0.5rem;
       color: white; }
-      .personajesGridContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje .cardPersonajeDescripcion {
+      .personajesContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje .cardPersonajeDescripcion {
         padding: 1rem;
         text-align: center; }
-        .personajesGridContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje .cardPersonajeDescripcion h3 {
+        .personajesContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje .cardPersonajeDescripcion h3 {
           text-align: center; }
-        .personajesGridContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje .cardPersonajeDescripcion p {
+        .personajesContainer .personajesContainer .personajesSubContainer .personajesCardContainer .cardPersonaje .cardPersonajeDescripcion p {
           text-align: start;
           max-width: 150px;
           margin: auto; }
@@ -640,6 +661,35 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-flow: column wrap; }
+
+.contenedorGrid {
+  display: grid;
+  grid-template-areas: "header" "main" "footer"; }
+
+.mainContainer {
+  display: grid;
+  grid-template-areas: "header header header" "left center right" "left center right" "left center right" "contacto contacto contacto" "footer footer footer"; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+.asideContainerLeft {
+  grid-area: left; }
+
+.personajesContainer, .comicsContainer {
+  grid-area: center; }
+
+.asideContainer {
+  grid-area: right; }
+
+.containerContacto {
+  grid-area: contacto; }
+
+footer {
+  grid-area: footer; }
 
 body {
   background-color: #181818; }
