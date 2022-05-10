@@ -145,7 +145,7 @@ nav {
     left: 100%;
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:910px) {
     .nav-list {
         position: fixed;
         top: 0;
@@ -156,6 +156,7 @@ nav {
         align-items: initial;
         background-color: $color-submenu-bg;
         z-index: 1000;
+        overflow-y: scroll;
     }
     
     .nav-list > li {
@@ -199,12 +200,12 @@ nav {
     nav.active .nav-list {
         display: flex;
     }
-    form {
+    .searchBar {
         visibility: hidden;
     }
 }
 
-form {
+.searchBar {
     @include flex-center;
     align-items: center;
 

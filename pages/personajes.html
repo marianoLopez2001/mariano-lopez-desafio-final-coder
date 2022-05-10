@@ -37,7 +37,8 @@
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a class="activo" href="#">Explorar<i class="bi bi-caret-down-fill"></i></a>
                         <ul class="sub-menu">
-                            <li><a class="activo" href="../pages/personajes.html">Personajes<i class="bi bi-caret-down-fill"></i></a>
+                            <li><a class="activo" href="../pages/personajes.html">Personajes<i
+                                        class="bi bi-caret-down-fill"></i></a>
                                 <ul class="sub-menu">
                                     <li><a href="../pages/personajes/wolverine.html">Wolverine</a></li>
                                     <li><a href="../pages/personajes/capitanamerica.html">Capitan America</a></li>
@@ -67,7 +68,7 @@
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
                 </ul>
-                <form action="">
+                <form class="searchBar" action="">
                     <input type="search" placeholder="Buscar Comic..." aria-label="Search">
                     <button type="submit"><i class="bi bi-search"></i></button>
                 </form>
@@ -81,183 +82,215 @@
         <section class="mainContainer personajesGridContainer">
             <div class="asideContainerLeft">
                 <h3>Tendencias</h3>
-                    <div class="imgContainer">
-                        <a href="../pages/comics/deathofwolverine.html"><img src="../images/comics/death of wolverine.jpg" alt="comics aside tendencias 1"
-                                width="200" height="308">
-                            <figure class="descriptionContainer">
-                            </figure>
-                            <div class="description">
-                                <h3>Death of wolverine</h3>
-                                <p>¡Wolverine, el mejor X-Man de todos los tiempos, ha muerto!
-                                    Con esta potencia mutante ahora permanentemente fuera de escena, ¡varias facciones
-                                    del bien y del mal están luchando para llenar el vacío dejado por la muerte de
-                                    Logan!</p>
-                                <p class="btnLeerMas">Leer Más</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="imgContainer">
-                        <a href="../pages/comics/messiahcomplex.html"><img src="../images/comics/1536.jpg" alt="comics aside tendencias 2" width="200" height="308">
-                            <figure class="descriptionContainer">
-                            </figure>
-                            <div class="description">
-                                <h3>X-Men Messiah complex</h3>
-                                <p>En un mundo desprovisto de mutantes, en el que sólo quedan 198 de ellos, los
-                                    Purificadores, liderados por el Reverendo William Stryker, se embarcan en una
-                                    «guerra santa», creyendo que los mutantes son los hijos del demonio...</p>
-                                <p class="btnLeerMas">Leer Más</p>
-                            </div>
-                        </a>
-                    </div>
-                    <h3>Recien Agregados</h3>
-                    <div class="imgContainer">
-                        <a href="../pages/comics/houseofm.html"><img src="../images/comics/House_of_M_01_Joe_Quesada_Variant.jpg"
-                                alt="comics aside recien agregados 3" width="200" height="308">
-                            <figure class="descriptionContainer">
-                            </figure>
-                            <div class="description">
-                                <h3>House Of M</h3>
-                                <p>Magneto ha perdido la guerra contra los humanos ordinarios por los que sacrificó el
-                                    bienestar de sus hijos. Ahora es forzado a ver a su hija Wanda, Scarlet Witch,
-                                    sufrir la perdida de control tanto de sus poderes...</p>
-                                <p class="btnLeerMas">Leer Más</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="imgContainer">
-                        <a href="../pages/comics/inferno.html"><img src="../images/comics/inferno.png" alt="comics aside recien agregados 3" width="200"
-                                height="308">
-                            <figure class="descriptionContainer">
-                            </figure>
-                            <div class="description">
-                                <h3>X-Men Inferno</h3>
-                                <p>Dos demonios del Limbo , S'ym y N'astirh , planean una invasión demoníaca de la
-                                    Tierra. Su plan gira en torno a Illyana Rasputin de los Nuevos Mutantes , ya que su
-                                    poder mutante le permite abrir pasajes...</p>
-                                <p class="btnLeerMas">Leer Más</p>
-                            </div>
-                        </a>
-                    </div>
+                <div class="imgContainer">
+                    <a href="../pages/comics/deathofwolverine.html"><img src="../images/comics/death of wolverine.jpg"
+                            alt="comics aside tendencias 1" width="200" height="308">
+                        <figure class="descriptionContainer">
+                        </figure>
+                        <div class="description">
+                            <h3>Death of wolverine</h3>
+                            <p>¡Wolverine, el mejor X-Man de todos los tiempos, ha muerto!
+                                Con esta potencia mutante ahora permanentemente fuera de escena, ¡varias facciones
+                                del bien y del mal están luchando para llenar el vacío dejado por la muerte de
+                                Logan!</p>
+                            <p class="btnLeerMas">Leer Más</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="imgContainer">
+                    <a href="../pages/comics/messiahcomplex.html"><img src="../images/comics/1536.jpg"
+                            alt="comics aside tendencias 2" width="200" height="308">
+                        <figure class="descriptionContainer">
+                        </figure>
+                        <div class="description">
+                            <h3>X-Men Messiah complex</h3>
+                            <p>En un mundo desprovisto de mutantes, en el que sólo quedan 198 de ellos, los
+                                Purificadores, liderados por el Reverendo William Stryker, se embarcan en una
+                                «guerra santa», creyendo que los mutantes son los hijos del demonio...</p>
+                            <p class="btnLeerMas">Leer Más</p>
+                        </div>
+                    </a>
+                </div>
+                <h3>Recien Agregados</h3>
+                <div class="imgContainer">
+                    <a href="../pages/comics/houseofm.html"><img
+                            src="../images/comics/House_of_M_01_Joe_Quesada_Variant.jpg"
+                            alt="comics aside recien agregados 3" width="200" height="308">
+                        <figure class="descriptionContainer">
+                        </figure>
+                        <div class="description">
+                            <h3>House Of M</h3>
+                            <p>Magneto ha perdido la guerra contra los humanos ordinarios por los que sacrificó el
+                                bienestar de sus hijos. Ahora es forzado a ver a su hija Wanda, Scarlet Witch,
+                                sufrir la perdida de control tanto de sus poderes...</p>
+                            <p class="btnLeerMas">Leer Más</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="imgContainer">
+                    <a href="../pages/comics/inferno.html"><img src="../images/comics/inferno.png"
+                            alt="comics aside recien agregados 3" width="200" height="308">
+                        <figure class="descriptionContainer">
+                        </figure>
+                        <div class="description">
+                            <h3>X-Men Inferno</h3>
+                            <p>Dos demonios del Limbo , S'ym y N'astirh , planean una invasión demoníaca de la
+                                Tierra. Su plan gira en torno a Illyana Rasputin de los Nuevos Mutantes , ya que su
+                                poder mutante le permite abrir pasajes...</p>
+                            <p class="btnLeerMas">Leer Más</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="comicsContainer personajesContainer">
                 <h1 class="personajesTitulo">Personajes</h1>
                 <div class="personajesSubContainer">
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/wolverine.html"><img src="../images/personajes/wolverine.jpg" alt="" width="172px"></a>
+                            <a href="../pages/personajes/wolverine.html"><img src="../images/personajes/wolverine.jpg"
+                                    alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Wolverine</h3>
-                                    <p>Posee sentidos afinados, poderosa capacidad de regeneración conocida
-                                        como un factor de curación, capacidades fisicas mejoradas y tres garras retráctiles en cada mano.</p>
+                                <h3>Wolverine</h3>
+                                <p>Posee sentidos afinados, poderosa capacidad de regeneración conocida
+                                    como un factor de curación, capacidades fisicas mejoradas y tres garras retráctiles
+                                    en cada mano.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/capitanamerica.html"><img src="../images/personajes/capAmerica.png" alt="" width="172px"></a>
+                            <a href="../pages/personajes/capitanamerica.html"><img
+                                    src="../images/personajes/capAmerica.png" alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Cap. America</h3>
-                                    <p>Utiliza un escudo casi indestructible que lanza como proyectil. Fue fisicamente mejorado por un suero
-                                        experimental para ayudar a los Estados Unidos en la Segunda Guerra Mundial.</p>
+                                <h3>Cap. America</h3>
+                                <p>Utiliza un escudo casi indestructible que lanza como proyectil. Fue fisicamente
+                                    mejorado por un suero
+                                    experimental para ayudar a los Estados Unidos en la Segunda Guerra Mundial.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/hawkeye.html"><img src="../images/personajes/hawkeye.jpg" alt="" width="172px"></a>
+                            <a href="../pages/personajes/hawkeye.html"><img src="../images/personajes/hawkeye.jpg"
+                                    alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Hawkeye</h3>
-                                    <p>Ojo de Halcón es un excelente arquero, y experto en diseño y construcción de nuevas puntas de flecha.
-                                        Tiene experiencia como artista circense y una visión extraordinaria.</p>
+                                <h3>Hawkeye</h3>
+                                <p>Ojo de Halcón es un excelente arquero, y experto en diseño y construcción de nuevas
+                                    puntas de flecha.
+                                    Tiene experiencia como artista circense y una visión extraordinaria.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/deadpool.html"><img src="../images/personajes/deadpool.png" alt="" width="172px"></a>
+                            <a href="../pages/personajes/deadpool.html"><img src="../images/personajes/deadpool.png"
+                                    alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Deadpool</h3>
-                                    <p>Wade Wilson, tras ser sometido a un cruel experimento científico, adquiere poderes que le convierten en
-                                        Deadpool. Armado con sus nuevas habilidades y un retorcido sentido del humor.</p>
+                                <h3>Deadpool</h3>
+                                <p>Wade Wilson, tras ser sometido a un cruel experimento científico, adquiere poderes
+                                    que le convierten en
+                                    Deadpool. Armado con sus nuevas habilidades y un retorcido sentido del humor.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/drstrange.html"><img src="../images/personajes/drStrange.png" alt="" width="172px"></a>
+                            <a href="../pages/personajes/drstrange.html"><img src="../images/personajes/drStrange.png"
+                                    alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Dr. Strange</h3>
-                                    <p>Stephen Strange posee vastos poderes místicos (teletransportación, generación de ilusiones, proyección de
-                                        energía), cuyo nivel puede compararse a las de algunas entidades cósmicas.</p>
+                                <h3>Dr. Strange</h3>
+                                <p>Stephen Strange posee vastos poderes místicos (teletransportación, generación de
+                                    ilusiones, proyección de
+                                    energía), cuyo nivel puede compararse a las de algunas entidades cósmicas.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/thor.html"><img src="../images/personajes/thor.png" alt="" width="172px"></a>
+                            <a href="../pages/personajes/thor.html"><img src="../images/personajes/thor.png" alt=""
+                                    width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Thor</h3>
-                                    <p>Thor, hijo de Odin, es el Dios del Trueno, miembro de la raza conocida como los Asgardianos, armado con
-                                        su martillo encantado Mjolnir, que le ayuda a canalizar sus energías divinas.</p>
+                                <h3>Thor</h3>
+                                <p>Thor, hijo de Odin, es el Dios del Trueno, miembro de la raza conocida como los
+                                    Asgardianos, armado con
+                                    su martillo encantado Mjolnir, que le ayuda a canalizar sus energías divinas.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/panteranegra.html"><img src="../images/personajes/panteraNegra.png" alt="" width="172px"></a>
+                            <a href="../pages/personajes/panteranegra.html"><img
+                                    src="../images/personajes/panteraNegra.png" alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Pantera Negra</h3>
-                                    <p>Es el rey y protector de Wakanda. Posee habilidades mejoradas a través de rituales antiguos de Wakanda,
-                                        confía en su dominio de la ciencia, el entrenamiento físico y las habilidades de combate mano a mano.</p>
+                                <h3>Pantera Negra</h3>
+                                <p>Es el rey y protector de Wakanda. Posee habilidades mejoradas a través de rituales
+                                    antiguos de Wakanda,
+                                    confía en su dominio de la ciencia, el entrenamiento físico y las habilidades de
+                                    combate mano a mano.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/psylocke.html"><img src="../images/personajes/psylocke.png" alt="" width="172px"></a>
+                            <a href="../pages/personajes/psylocke.html"><img src="../images/personajes/psylocke.png"
+                                    alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Psylocke</h3>
-                                    <p>Psylocke nacio poderosos poderes mentales, puede leer mentes, proyectar sus pensamientos en la mente de otros y mas. Tambien tiene la habilidad de crear armas de energía psíquica y es experta en artes marciales.</p>
+                                <h3>Psylocke</h3>
+                                <p>Psylocke nacio poderosos poderes mentales, puede leer mentes, proyectar sus
+                                    pensamientos en la mente de otros y mas. Tambien tiene la habilidad de crear armas
+                                    de energía psíquica y es experta en artes marciales.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/nightcrawler.html"><img src="../images/personajes/nightcrawler.png" alt="" width="172px"></a>
+                            <a href="../pages/personajes/nightcrawler.html"><img
+                                    src="../images/personajes/nightcrawler.png" alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Nightcrawler</h3>
-                                    <p>Como mutante, Kurt Wagner tiene la capacidad de teleportarse, hasta una distancia máxima de unos tres
-                                        kilómetros, además de una agilidad sobrehumana, y diversas mutaciones en su aspecto físico externo.</p>
+                                <h3>Nightcrawler</h3>
+                                <p>Como mutante, Kurt Wagner tiene la capacidad de teleportarse, hasta una distancia
+                                    máxima de unos tres
+                                    kilómetros, además de una agilidad sobrehumana, y diversas mutaciones en su aspecto
+                                    físico externo.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/spiderman.html"><img src="../images/personajes/spiderMan.png" alt="" width="172px"></a>
+                            <a href="../pages/personajes/spiderman.html"><img src="../images/personajes/spiderMan.png"
+                                    alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Spider Man</h3>
-                                    <p>Como resultado de la mordedura de una araña radioactiva, el estudiante de secundaria Peter Parker
-                                        desarrolló poderes y habilidades similares a las de una araña, convirtiendose en el superheroe Spider Man.</p>
+                                <h3>Spider Man</h3>
+                                <p>Como resultado de la mordedura de una araña radioactiva, el estudiante de secundaria
+                                    Peter Parker
+                                    desarrolló poderes y habilidades similares a las de una araña, convirtiendose en el
+                                    superheroe Spider Man.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/ironman.html"><img src="../images/personajes/ironMan.png" alt="" width="172px"></a>
+                            <a href="../pages/personajes/ironman.html"><img src="../images/personajes/ironMan.png"
+                                    alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>Iron Man</h3>
-                                    <p>Tony Stark, es un ingenioso científico, quien sufrió una grave lesión en el pecho durante un secuestro en
-                                        el Medio Oriente. Para escapar crea una armadura, la cual usara para proteger al mundo como Iron Man.</p>
+                                <h3>Iron Man</h3>
+                                <p>Tony Stark, es un ingenioso científico, quien sufrió una grave lesión en el pecho
+                                    durante un secuestro en
+                                    el Medio Oriente. Para escapar crea una armadura, la cual usara para proteger al
+                                    mundo como Iron Man.</p>
                             </div>
                         </div>
                     </div>
                     <div class="personajesCardContainer">
                         <div class="cardPersonaje">
-                            <a href="../pages/personajes/punisher.html"><img src="../images/personajes/punisher.png" alt="" width="172px"></a>
+                            <a href="../pages/personajes/punisher.html"><img src="../images/personajes/punisher.png"
+                                    alt="" width="172px"></a>
                             <div class="cardPersonajeDescripcion">
-                                    <h3>The Punisher</h3>
-                                    <p>Tras la muerte de su esposa e hijos, asesinados por la mafia, Frank Castle emprende una guerra personal
-                                        contra los criminales, usando toda clase de tácticas y armamento como un veterano de guerra.</p>
+                                <h3>The Punisher</h3>
+                                <p>Tras la muerte de su esposa e hijos, asesinados por la mafia, Frank Castle emprende
+                                    una guerra personal
+                                    contra los criminales, usando toda clase de tácticas y armamento como un veterano de
+                                    guerra.</p>
                             </div>
                         </div>
                     </div>
@@ -279,6 +312,38 @@
                             href="$">Contacto</a></p>
                 </div>
             </div>
+        </section>
+
+        <!-- INICIO DE CONTACTO-->
+
+        <section id="contacto" class="containerContacto">
+            <div class="mapContainer">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6314274448473!2d-58.44096218480037!3d-34.58819146418361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58c95d8999b%3A0xe26e576f58812d12!2sAv.%20Cordoba%205443%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1651965206815!5m2!1ses-419!2sar"
+                    width="500" height="408" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form>
+                <h3 class="text-center">Contactanos!</h3>
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Nombre</label>
+                    <input type="text" class="mb-4 form-control" size="25" id="inputName" placeholder="...">
+                    <label for="inputLname" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputLname" placeholder="...">
+                </div>
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        size="50" placeholder="...">
+                </div>
+                <div class="">
+                    <label for="inputTel" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" id="inputTel" placeholder="...">
+                </div>
+                <div class="text-center pt-3">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
         </section>
     </main>
 
@@ -302,8 +367,10 @@
         </div>
         <div class="redesDiv hide2">
             <h4>Redes Sociales</h4>
-            <a class="linkRedes" href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
-            <a class="linkRedes" href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+            <a class="linkRedes" href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i>
+                Instagram</a>
+            <a class="linkRedes" href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i>
+                Facebook</a>
             <a class="linkRedes" href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i> Twitter</a>
         </div>
     </footer>

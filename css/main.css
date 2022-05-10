@@ -134,7 +134,7 @@ nav {
   top: 0;
   left: 100%; }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 910px) {
   .nav-list {
     position: fixed;
     top: 0;
@@ -144,7 +144,8 @@ nav {
     flex-direction: column;
     align-items: initial;
     background-color: grey;
-    z-index: 1000; }
+    z-index: 1000;
+    overflow-y: scroll; }
   .nav-list > li {
     line-height: 6rem; }
   .sub-menu {
@@ -169,15 +170,15 @@ nav {
     display: none; }
   nav.active .nav-list {
     display: flex; }
-  form {
+  .searchBar {
     visibility: hidden; } }
 
-form {
+.searchBar {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center; }
-  form input {
+  .searchBar input {
     background-color: #202020;
     border-radius: 5rem;
     padding: 0.5rem 1rem;
@@ -185,7 +186,7 @@ form {
     font-size: 1.3rem;
     height: 40px;
     color: white; }
-  form button {
+  .searchBar button {
     display: inline-block;
     background-color: #202020;
     color: white;
@@ -198,10 +199,10 @@ form {
     height: 40px;
     display: flex;
     align-items: center; }
-    form button:active {
+    .searchBar button:active {
       color: red;
       transition: 100ms; }
-    form button:hover {
+    .searchBar button:hover {
       background-color: #373737;
       transition: 300ms; }
 
@@ -272,7 +273,7 @@ form {
   .mainContainer .asideContainerLeft {
     color: white;
     padding: 2rem; }
-    .mainContainer .asideContainerLeft h3 {
+    .mainContainer .asideContainerLeft .asideTitle {
       padding: 1rem 0rem;
       font-size: 2rem; }
   .mainContainer .asideContainer {
@@ -570,7 +571,7 @@ footer {
     height: 136px; }
   .imgContainer .description {
     color: white; }
-    .imgContainer .description h3 {
+    .imgContainer .description .descriptionTitulo {
       font-size: 1.5rem;
       text-align: center;
       padding: 0.5rem 0rem 0rem 0rem; }
@@ -588,7 +589,7 @@ footer {
         background-color: #ff4242; }
 
 .personajesGridContainer {
-  margin-top: 10rem; }
+  margin: 10rem 0rem 5rem 0rem; }
   .personajesGridContainer .personajesContainer .personajesTitulo {
     color: white;
     padding: 3rem;

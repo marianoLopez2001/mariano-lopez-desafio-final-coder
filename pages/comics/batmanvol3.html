@@ -67,7 +67,7 @@
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="/pages/sobrenosotros.html">Sobre Nosotros</a></li>
                 </ul>
-                <form action="">
+                <form class="searchBar" action="">
                     <input type="search" placeholder="Buscar Comic..." aria-label="Search">
                     <button type="submit"><i class="bi bi-search"></i></button>
                 </form>
@@ -84,8 +84,8 @@
             <div class="asideContainerLeft">
                 <h3>Tendencias</h1>
                     <div class="imgContainer">
-                        <a href="/pages/comics/deathofwolverine.html"><img src="/images/comics/death of wolverine.jpg" alt="comics aside tendencias 1"
-                                width="200" height="308">
+                        <a href="/pages/comics/deathofwolverine.html"><img src="/images/comics/death of wolverine.jpg"
+                                alt="comics aside tendencias 1" width="200" height="308">
                             <figure class="descriptionContainer">
                             </figure>
                             <div class="description">
@@ -99,7 +99,8 @@
                         </a>
                     </div>
                     <div class="imgContainer">
-                        <a href="/pages/comics/messiahcomplex.html"><img src="/images/comics/1536.jpg" alt="comics aside tendencias 2" width="200" height="308">
+                        <a href="/pages/comics/messiahcomplex.html"><img src="/images/comics/1536.jpg"
+                                alt="comics aside tendencias 2" width="200" height="308">
                             <figure class="descriptionContainer">
                             </figure>
                             <div class="description">
@@ -113,7 +114,8 @@
                     </div>
                     <h3>Recien Agregados</h3>
                     <div class="imgContainer">
-                        <a href="/pages/comics/houseofm.html"><img src="/images/comics/House_of_M_01_Joe_Quesada_Variant.jpg"
+                        <a href="/pages/comics/houseofm.html"><img
+                                src="/images/comics/House_of_M_01_Joe_Quesada_Variant.jpg"
                                 alt="comics aside recien agregados 3" width="200" height="308">
                             <figure class="descriptionContainer">
                             </figure>
@@ -127,8 +129,8 @@
                         </a>
                     </div>
                     <div class="imgContainer">
-                        <a href="/pages/comics/inferno.html"><img src="/images/comics/inferno.png" alt="comics aside recien agregados 3" width="200"
-                                height="308">
+                        <a href="/pages/comics/inferno.html"><img src="/images/comics/inferno.png"
+                                alt="comics aside recien agregados 3" width="200" height="308">
                             <figure class="descriptionContainer">
                             </figure>
                             <div class="description">
@@ -146,10 +148,15 @@
                     <div class="subContenedor">
                         <h1 class="comicTitle">Batman Volumen 3 (Rebirth)</h1>
                         <div class="comicCardBody">
-                            <img class="img-fluid" src="/images/comics/batmancarousel.jpg" alt="Portada Comic kick ass 2"
-                                width="300px">
+                            <img class="img-fluid" src="/images/comics/batmancarousel.jpg"
+                                alt="Portada Comic kick ass 2" width="300px">
                             <div class="comicCardDescription">
-                                <p class="sinopsis">Después de recobrar la memoria, rejuvenecer su cuerpo, en cierta forma después del Renacer Batman, con traje nuevo incluido, protegera a su ciudad nuevamente pero han aparecidos nuevos héroes llamándose Gotham y Gotham Girl con poderes muy similares a los de Superman pero una vez ocurridos los eventos de Rebirth sabe que algo pasa en el universo y es por eso que no se puede dar el lujo de confiar en todos los que dicen querer ayudar.
+                                <p class="sinopsis">Después de recobrar la memoria, rejuvenecer su cuerpo, en cierta
+                                    forma después del Renacer Batman, con traje nuevo incluido, protegera a su ciudad
+                                    nuevamente pero han aparecidos nuevos héroes llamándose Gotham y Gotham Girl con
+                                    poderes muy similares a los de Superman pero una vez ocurridos los eventos de
+                                    Rebirth sabe que algo pasa en el universo y es por eso que no se puede dar el lujo
+                                    de confiar en todos los que dicen querer ayudar.
                                 </p>
                                 <p class="formato">Formato: CBR</p>
                                 <p class="editorial">Editorial: DC</p>
@@ -196,6 +203,38 @@
                 <a href="#"><img src="/images/comics/inhumans.png" alt="Comic 4 relacionado" width="250"></a>
             </div>
         </section>
+
+        <!-- INICIO DE CONTACTO-->
+
+        <section id="contacto" class="containerContacto">
+            <div class="mapContainer">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6314274448473!2d-58.44096218480037!3d-34.58819146418361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58c95d8999b%3A0xe26e576f58812d12!2sAv.%20Cordoba%205443%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1651965206815!5m2!1ses-419!2sar"
+                    width="500" height="408" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form>
+                <h3 class="text-center">Contactanos!</h3>
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Nombre</label>
+                    <input type="text" class="mb-4 form-control" size="25" id="inputName" placeholder="...">
+                    <label for="inputLname" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputLname" placeholder="...">
+                </div>
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        size="50" placeholder="...">
+                </div>
+                <div class="">
+                    <label for="inputTel" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" id="inputTel" placeholder="...">
+                </div>
+                <div class="text-center pt-3">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <!--footer-->
@@ -218,8 +257,10 @@
         </div>
         <div class="redesDiv hide2">
             <h4>Redes Sociales</h4>
-            <a class="linkRedes" href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
-            <a class="linkRedes" href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+            <a class="linkRedes" href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i>
+                Instagram</a>
+            <a class="linkRedes" href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i>
+                Facebook</a>
             <a class="linkRedes" href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i> Twitter</a>
         </div>
     </footer>
