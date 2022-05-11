@@ -7,6 +7,25 @@
     }
 }
 
+@media screen and (max-width:1305px) {
+    .asideContainerIndex {
+        display: none;
+    }
+    .asideContainerLeftIndex {
+        display: none;
+    }
+    .mainContainerIndex {
+        place-items: center;
+    }
+}
+
+@media screen and (max-width:693px) {
+    .comic {
+        max-width: 320px;
+    }
+}
+
+
 @media screen and (max-width:1090px) {
     .asideContainer {
         display: none;
