@@ -8,9 +8,7 @@
   .asideContainerLeftIndex {
     display: none; }
   .mainContainerIndex {
-    place-items: center; } }
-
-@media screen and (max-width: 693px) {
+    place-items: center; }
   .comic {
     max-width: 320px; } }
 
@@ -311,25 +309,22 @@ nav {
 
 .mainContainer .asideContainerLeft {
   color: white;
-  margin-top: 15rem;
   padding: 2rem; }
   .mainContainer .asideContainerLeft .asideTitle {
     padding: 1rem 0rem;
     font-size: 2rem; }
 
-.mainContainer .asideContainer {
-  margin-top: 15rem; }
-  .mainContainer .asideContainer .asideItem {
-    background-color: #202020;
-    width: 300px;
-    height: 150px;
-    margin: 3rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    border: 1px solid #4a4a4a;
-    color: white; }
-    .mainContainer .asideContainer .asideItem h3 {
-      font-weight: 700; }
+.mainContainer .asideContainer .asideItem {
+  background-color: #202020;
+  width: 300px;
+  height: 150px;
+  margin: 3rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #4a4a4a;
+  color: white; }
+  .mainContainer .asideContainer .asideItem h3 {
+    font-weight: 700; }
 
 .sobreNosotros .sobreNosotrosPadre {
   color: white; }
@@ -484,8 +479,14 @@ footer {
       footer .redesDiv .linkRedes i {
         font-size: 1.5rem; }
 
-.mainContainerComicPersonaje {
+.personajeComicContainer {
   margin-top: 10rem; }
+
+.asideContainerComicsRight {
+  margin-top: 20rem; }
+
+.asideContainerComicsLeft {
+  margin-top: 20rem; }
 
 .comicsRelacionados {
   padding: 3rem 0rem;
@@ -653,27 +654,32 @@ footer {
           max-width: 150px;
           margin: auto; }
 
-.tituloEditoriales {
-  color: white;
-  text-align: center;
-  margin-top: 1rem; }
-
-.editorialesContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem; }
-  .editorialesContainer .editorialesCardContainer {
+.editorialesContenedor {
+  padding-top: 10rem; }
+  .editorialesContenedor .tituloEditoriales {
     color: white;
-    background-color: #202020;
-    border-radius: 5px;
-    border: 1px solid #4a4a4a; }
-    .editorialesContainer .editorialesCardContainer .editorialCard {
-      padding: 1rem;
-      text-align: center; }
-      .editorialesContainer .editorialesCardContainer .editorialCard .editorialesTitle {
-        padding-top: 1rem; }
-      .editorialesContainer .editorialesCardContainer .editorialCard .editorialesDescription {
-        max-width: 172px; }
+    text-align: center;
+    margin-top: 1rem; }
+  .editorialesContenedor .editorialesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 3rem; }
+    .editorialesContenedor .editorialesContainer .editorialesCardContainer {
+      color: white;
+      background-color: #202020;
+      border-radius: 5px;
+      border: 1px solid #4a4a4a;
+      max-width: 210px; }
+      .editorialesContenedor .editorialesContainer .editorialesCardContainer .editorialCard {
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column; }
+        .editorialesContenedor .editorialesContainer .editorialesCardContainer .editorialCard .editorialesTitle {
+          padding-top: 1rem; }
+        .editorialesContenedor .editorialesContainer .editorialesCardContainer .editorialCard .editorialesDescription {
+          max-width: 172px; }
 
 .editorialComicsContainer {
   display: flex;
@@ -682,7 +688,10 @@ footer {
 
 .contenedorGrid {
   display: grid;
-  grid-template-areas: "main" "contacto" "footer"; }
+  grid-template-areas: "main" "footer"; }
+
+.personajesGridContainer {
+  justify-content: center; }
 
 .mainContainer {
   display: grid;

@@ -3,18 +3,21 @@
 .contenedorGrid {
     display: grid;
     grid-template-areas: "main"
-                         "contacto"
                          "footer"
 }
 
 //grid index
+
+.personajesGridContainer {
+    justify-content: center;
+}
 
 .mainContainer {
     display: grid;
     grid-template-areas: "carousel carousel carousel"
                          "left center right"
                          "left center right"
-                         "left center right"
+                         "left center right";
 }
 
 .contenedorCarousel {

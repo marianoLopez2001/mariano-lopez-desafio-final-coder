@@ -17,13 +17,16 @@
     .mainContainerIndex {
         place-items: center;
     }
-}
-
-@media screen and (max-width:693px) {
     .comic {
         max-width: 320px;
     }
 }
+
+//@media screen and (max-width:693px) {
+//    .comic {
+//        max-width: 320px;
+//    }
+//}
 
 @media screen and (max-width:500px) {
     .mapContainer {
