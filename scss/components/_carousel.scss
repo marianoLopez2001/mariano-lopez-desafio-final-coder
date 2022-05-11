@@ -1,6 +1,8 @@
+.contenedorCarousel {
+    padding-top: 10rem;
+    width: 100vw;
 .carousel{
     width: 100%;
-    padding: 10rem 0rem 0rem 0rem;
     border-bottom: 1px solid $color-gris-border;
     background-color: $color-negro-dos;
     ul{
@@ -12,4 +14,4 @@
         }
     }
 }
-
+}

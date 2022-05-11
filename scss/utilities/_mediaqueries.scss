@@ -25,6 +25,17 @@
     }
 }
 
+@media screen and (max-width:500px) {
+    .mapContainer {
+        iframe {
+            width: 350px;
+            height: 300px;
+        }
+    }
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
 
 @media screen and (max-width:1090px) {
     .asideContainer {
@@ -49,7 +60,7 @@
     }
 }
 
-@media screen and (max-width:425px) {   
+@media screen and (max-width:530px) {   
     footer {
         .contactDiv {
             display: none;

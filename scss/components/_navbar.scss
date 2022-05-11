@@ -6,19 +6,15 @@ ul {
     list-style: none;
 }
 
-header {
+.navbarContainer {
     width: 100%;
-    position: fixed; //no hace falta creao aca
+    position: fixed; 
     z-index: 10000;
     top: 0;
     left: 0;
     background-color: $color-negro-uno;
     border-bottom: 1px solid $color-gris-border;
-}
-
-.navbarContainer {
     width: 100%;
-    max-width: 117rem;
     margin: 0 auto;
     padding: 0 1.5rem;
 }

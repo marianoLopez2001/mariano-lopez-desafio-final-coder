@@ -53,20 +53,44 @@ $(document).ready(function() {
  
         responsive : [
             {
-                breakpoint:800,
+                breakpoint:1400,
+                settings: {
+                    item:6,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:1200,
+                settings: {
+                    item:5,
+                    slideMove:1
+                  }
+            },
+            {
+                breakpoint:990,
+                settings: {
+                    item:4,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:785,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:560,
                 settings: {
                     item:2,
                     slideMove:1,
                     slideMargin:6,
                   }
             },
-            {
-                breakpoint:480,
-                settings: {
-                    item:1,
-                    slideMove:1
-                  }
-            }
         ],
  
         onBeforeStart: function (el) {},

@@ -1,28 +1,24 @@
-//grid index
-
 //grid personajes
 
 .contenedorGrid {
     display: grid;
-    grid-template-areas: "header"
-                         "main"
-                         "footer";
+    grid-template-areas: "main"
+                         "contacto"
+                         "footer"
 }
+
+//grid index
 
 .mainContainer {
     display: grid;
-    grid-template-areas: "header header header"
+    grid-template-areas: "carousel carousel carousel"
                          "left center right"
                          "left center right"
                          "left center right"
-                         "contacto contacto contacto"
-                         "footer footer footer";
 }
 
-
-
-header {
-    grid-area: header;
+.contenedorCarousel {
+    grid-area: carousel;
 }
 
 main {
