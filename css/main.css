@@ -551,18 +551,18 @@ footer {
     border-radius: 5px;
     height: fit-content;
     background-color: #202020; }
-    .instruccionesContainer .instruccionesUno h1 {
+    .instruccionesContainer .instruccionesUno .instruccionesTitle {
       text-align: center;
       letter-spacing: 5px;
       padding-bottom: 2rem;
-      font-size: 30px; }
+      font-size: 3rem; }
     .instruccionesContainer .instruccionesUno ol {
       margin: 2rem; }
       .instruccionesContainer .instruccionesUno ol li {
         max-width: 600px;
         font-size: 1.2rem; }
-    .instruccionesContainer .instruccionesUno h2 {
-      font-size: 20px;
+    .instruccionesContainer .instruccionesUno .instruccionesSubTitle {
+      font-size: 2rem;
       padding-left: 2rem; }
     .instruccionesContainer .instruccionesUno .iframeVid {
       border-radius: 10px;
@@ -661,7 +661,8 @@ footer {
   .personajesContainer .personajesContainer .personajesTitulo {
     color: white;
     padding: 3rem;
-    text-align: center; }
+    text-align: center;
+    font-size: 2.2rem; }
   .personajesContainer .personajesContainer .personajesSubContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

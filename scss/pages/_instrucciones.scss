@@ -12,11 +12,11 @@
         height: fit-content;
         background-color: $color-negro-uno;
 
-        h1 {
+        .instruccionesTitle {
             text-align: center;
             letter-spacing: 5px;
             padding-bottom: 2rem;
-            font-size: 30px;
+            font-size: 3rem;
         }
 
         ol {
@@ -28,8 +28,8 @@
             }
         }
 
-        h2 {
-            font-size: 20px;
+        .instruccionesSubTitle {
+            font-size: 2rem;
             padding-left: 2rem;
         }
 
