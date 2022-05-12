@@ -331,14 +331,34 @@ nav {
 .mainContainer .asideContainer .asideItem {
   background-color: #202020;
   width: 300px;
-  height: 150px;
   margin: 3rem;
   padding: 2rem;
   border-radius: 1rem;
   border: 1px solid #4a4a4a;
   color: white; }
-  .mainContainer .asideContainer .asideItem h3 {
+  .mainContainer .asideContainer .asideItem .btnInstrucciones {
+    padding: 0.8rem 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    border: 1px solid #4a4a4a; }
+    .mainContainer .asideContainer .asideItem .btnInstrucciones:hover {
+      background-color: #ff3e3e;
+      transition: ease-in-out 200ms; }
+  .mainContainer .asideContainer .asideItem .asideContainerTitle {
     font-weight: 700; }
+  .mainContainer .asideContainer .asideItem .asideContainerRedes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem; }
+    .mainContainer .asideContainer .asideItem .asideContainerRedes a {
+      text-decoration: none;
+      color: white; }
+      .mainContainer .asideContainer .asideItem .asideContainerRedes a:hover {
+        color: red;
+        transition: ease 600ms; }
+      .mainContainer .asideContainer .asideItem .asideContainerRedes a i {
+        font-size: 2rem; }
 
 .sobreNosotros .sobreNosotrosPadre {
   color: white; }
@@ -693,6 +713,9 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-flow: column wrap; }
+
+.asideEditorialesContainer {
+  margin-top: 14rem; }
 
 .contenedorGrid {
   display: grid;

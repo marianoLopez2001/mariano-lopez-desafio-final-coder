@@ -15,15 +15,42 @@
         .asideItem {
             background-color: $color-negro-uno;
             width: 300px;
-            height: 150px;
             margin: 3rem;
             padding: 2rem;
             border-radius: 1rem;
             border: $border;
             color: white;
 
-            h3 {
+            .btnInstrucciones {
+                padding: 0.8rem 1rem;
+                background-color: red;
+                color: white;
+                border-radius: 1rem;
+                border: $border;
+                &:hover {
+                    background-color: rgb(255, 62, 62);
+                    transition: ease-in-out 200ms;
+                }
+            }
+
+            .asideContainerTitle {
                 font-weight: 700;
+            }
+            .asideContainerRedes {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 2rem;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        color: red;
+                        transition: ease 600ms;
+                    }
+                    i {
+                        font-size: 2rem;
+                    }
+                }
             }
         }
     }
