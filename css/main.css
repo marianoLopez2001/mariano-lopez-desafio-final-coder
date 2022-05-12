@@ -19,6 +19,12 @@
   footer {
     grid-template-columns: 1fr; } }
 
+@media screen and (max-width: 1155px) {
+  .redesSociales {
+    max-width: 462px; }
+  .semiContacto {
+    margin-top: 3rem; } }
+
 @media screen and (max-width: 1090px) {
   .asideContainer {
     display: none; }
@@ -26,6 +32,14 @@
     display: none; }
   .personajesContainer {
     place-items: center; } }
+
+@media screen and (max-width: 700px) {
+  .sobreNosDos {
+    flex-direction: column;
+    margin: auto;
+    max-width: 280px; }
+    .sobreNosDos .ofrecemos {
+      margin: 1rem; } }
 
 @media screen and (max-width: 850px) {
   footer {
@@ -329,10 +343,9 @@ nav {
 .sobreNosotros .sobreNosotrosPadre {
   color: white; }
   .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos {
+    margin: 15rem 0rem 5rem 0rem;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 15rem; }
+    justify-content: center; }
     .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos img {
       margin-bottom: 10rem; }
     .sobreNosotros .sobreNosotrosPadre .contenedorSobreNos .sobreNosUno h1 {
@@ -391,6 +404,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  align-items: center;
   color: white;
   padding: 10rem; }
   .sobreNosotros .sobreNosotrosPadreDos .redesSociales {
@@ -479,6 +493,13 @@ footer {
       footer .redesDiv .linkRedes i {
         font-size: 1.5rem; }
 
+.mainContainerComicPersonaje {
+  margin-top: 10rem; }
+  .mainContainerComicPersonaje .asideContainerComicLeft {
+    margin-top: 6rem; }
+  .mainContainerComicPersonaje .asideContainerComicRight {
+    margin-top: 6rem; }
+
 .personajeComicContainer {
   margin-top: 10rem; }
 
@@ -497,26 +518,13 @@ footer {
     letter-spacing: 5px;
     padding-bottom: 2rem;
     font-size: 2.4rem; }
-  .comicsRelacionados .comicsRelacionadosImg {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-content: center;
-    place-items: center;
-    padding: 0rem 15rem 3rem 15rem;
-    gap: 3rem; }
-    .comicsRelacionados .comicsRelacionadosImg img {
-      border-radius: 0.25rem;
-      border: 1px solid #4a4a4a; }
-      .comicsRelacionados .comicsRelacionadosImg img:hover {
-        transform: scale(102%);
-        transition: 0.3s; }
 
 .instruccionesContainer {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 5rem;
   color: white;
-  margin-top: 10rem; }
+  margin-top: 2rem; }
   .instruccionesContainer .instruccionesUno {
     padding: 2rem;
     border: 1px solid #4a4a4a;
@@ -695,7 +703,8 @@ footer {
 
 .mainContainer {
   display: grid;
-  grid-template-areas: "carousel carousel carousel" "left center right" "left center right" "left center right"; }
+  grid-template-areas: "carousel carousel carousel" "left center right" "left center right" "left center right";
+  justify-content: center; }
 
 .contenedorCarousel {
   grid-area: carousel; }

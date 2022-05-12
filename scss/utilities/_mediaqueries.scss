@@ -40,6 +40,15 @@
     }
 }
 
+@media screen and (max-width:1155px) {
+    .redesSociales {
+        max-width: 462px;
+    }
+    .semiContacto {
+        margin-top: 3rem;
+    }
+}
+
 @media screen and (max-width:1090px) {
     .asideContainer {
         display: none;
@@ -51,6 +60,17 @@
 
     .personajesContainer {
         place-items: center;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .sobreNosDos {
+        flex-direction: column;
+        margin: auto;
+        max-width: 280px;
+        .ofrecemos {
+            margin: 1rem;
+        }
     }
 }
 
